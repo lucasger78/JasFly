@@ -650,16 +650,25 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, #556270, transparent 50%);
+  border: 1px solid #d6d6d6 !important;  
+  box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+   0 1px 3px rgba(0, 0, 0, 0.3);
   font-size: 16px;
-  color: color-mix(in srgb, #556270, transparent 30%);
+  /* color: color-mix(in srgb, #556270, transparent 30%); */
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  /* color: var(--accent-color); */
+  /* border-color: var(--accent-color); */
+  box-shadow: 
+     0 2px 4px rgba(0, 0, 0, 0.2),        /* Sombra exterior inferior */
+    inset 0 -3px 5px rgba(255, 255, 255, 0.9),  /* Luz superior interior (borde blanco arriba) */
+    inset 0 4px 7px rgba(0, 0, 0, 0.2);   /* Sombra interior inferior */
+          
+  border-color: #b5b5b5 !important;
+  background-color: #f3f3f3 !important;
 }
 
 .footer h4 {
@@ -707,6 +716,7 @@ h6 {
 
 .footer .footer-contact p {
   margin-bottom: 5px;
+  color: #556270;
 }
 
 .footer .footer-newsletter .newsletter-form {
