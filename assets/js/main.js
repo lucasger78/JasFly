@@ -197,3 +197,29 @@
   window.addEventListener("load", initSwiper);
 
 })();
+
+// CARRUSEL DE TESTIMONIOS
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.querySelector('.testimonial-carousel-track');
+  const items = document.querySelectorAll('.testimonial-item');
+  const itemWidth = items[0].offsetWidth + 20; // Ancho + gap
+  
+  // Duplicamos los items para efecto infinito
+  track.innerHTML += track.innerHTML;
+  
+  // Reiniciamos la animación cuando llega al final
+  track.addEventListener('animationiteration', function() {
+    track.style.animation = 'none';
+    void track.offsetWidth; // Trigger reflow
+    track.style.animation = 'scroll 30s linear infinite';
+  });
+  
+  // Pausar al hacer hover
+  track.addEventListener('mouseenter', function() {
+    track.style.animationPlayState = 'paused';
+  });
+  
+  track.addEventListener('mouseleave', function() {
+    track.style.animationPlayState = 'running';
+  });
+});

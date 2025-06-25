@@ -1837,6 +1837,52 @@ color: inherit;
 }
 
 /*--------------------------------------------------------------
+# CARRUSEL DE TESTIMONIOS
+--------------------------------------------------------------*/
+.testimonial-carousel-container {
+  width: 82%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.testimonial-carousel-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.testimonial-carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.testimonial-item {
+  min-width: 300px; /* Ajusta según el tamaño de tus tarjetas */
+  width: 150px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover {
+  transform: scale(1.03);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Mueve la mitad del ancho total */
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
 .features {
