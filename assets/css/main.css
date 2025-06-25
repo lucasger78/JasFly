@@ -875,8 +875,8 @@ h6 {
 }
 
 .page-title .breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex;  
+  flex-wrap: nowrap;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -886,6 +886,7 @@ h6 {
 
 .page-title .breadcrumbs ol li+li {
   padding-left: 10px;
+  
 }
 
 .page-title .breadcrumbs ol li+li::before {
@@ -893,6 +894,10 @@ h6 {
   display: inline-block;
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+#minimenu{
+  margin-top: 10px !important;
 }
 
 /*--------------------------------------------------------------
@@ -920,7 +925,8 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   padding-bottom: 60px;
-  position: relative;
+  position: relative;  
+  width: 80%;
 }
 
 .section-title h2 {
@@ -1177,6 +1183,42 @@ section,
   transform: translate(5px, 0);
 }
 
+.title-about{
+  margin-top: 20px;
+}
+
+.about-items{
+  margin-bottom: 50px; 
+}
+
+.member-info .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #d6d6d6 !important;  
+  box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+   0 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  /* color: color-mix(in srgb, #556270, transparent 30%); */
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.member-info .social-links a:hover {
+  /* color: var(--accent-color); */
+  /* border-color: var(--accent-color); */
+  box-shadow: 
+     0 2px 4px rgba(0, 0, 0, 0.2),        /* Sombra exterior inferior */
+    inset 0 -3px 5px rgba(255, 255, 255, 0.9),  /* Luz superior interior (borde blanco arriba) */
+    inset 0 4px 7px rgba(0, 0, 0, 0.2);   /* Sombra interior inferior */
+          
+  border-color: #b5b5b5 !important;
+  background-color: #f3f3f3 !important;
+}
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
@@ -1357,7 +1399,28 @@ section,
 --------------------------------------------------------------*/
 .about-2 .about-img {
   position: relative;
-  margin: 60px 0 0 60px;
+  margin: 0 0 0 60px;
+}
+.about-2 .about-img {
+ /* padding: 2px 6px !important;  Ajusta este valor para hacerlo más estrecho */
+  font-size: 14px;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 5px !important;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) !important; */
+  box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+    0 1px 3px rgba(0, 0, 0, 0.3);
+color: inherit;
+}
+
+.about-2 .about-img:hover {
+  box-shadow: 
+     0 2px 4px rgba(0, 0, 0, 0.2),        /* Sombra exterior inferior */
+    inset 0 -3px 5px rgba(255, 255, 255, 0.9),  /* Luz superior interior (borde blanco arriba) */
+    inset 0 4px 7px rgba(0, 0, 0, 0.2);   /* Sombra interior inferior */
+          
+  border-color: #b5b5b5 !important;
+  background-color: #f3f3f3 !important;
+ 
 }
 
 .about-2 .about-img:before {
@@ -1523,15 +1586,62 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
-.team .team-member {
-  background-color: var(--surface-color);
+.team-member {
+  /* background-color: var(--surface-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   border-radius: 5px;
   transition: 0.5s;
   padding: 30px;
-  height: 100%;
+  height: 100%; */
+   /* display: inline-block; */
+  padding: 8px 12px !important; /* Ajusta este valor para hacerlo más estrecho */
+  font-size: 14px;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 5px !important;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) !important; */
+  box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+    0 1px 3px rgba(0, 0, 0, 0.3);
+  /* white-space: nowrap;
+  text-decoration: none; */
+  color: inherit;
 }
+
+/* .navmenu ul li.item-navmenu > a {
+  display: inline-block;
+  padding: 8px 12px !important; 
+  font-size: 14px;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);  
+  box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+    0 1px 3px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+} */
+
+
+.team-member:hover {
+  box-shadow: 
+     0 2px 4px rgba(0, 0, 0, 0.2),        /* Sombra exterior inferior */
+    inset 0 -3px 5px rgba(255, 255, 255, 0.9),  /* Luz superior interior (borde blanco arriba) */
+    inset 0 4px 7px rgba(0, 0, 0, 0.2);   /* Sombra interior inferior */
+          
+  border-color: #b5b5b5 !important;
+  background-color: #f3f3f3 !important;
+ 
+}
+/* .navmenu ul li.item-navmenu > a:hover {
+  box-shadow: 
+     0 2px 4px rgba(0, 0, 0, 0.2),       
+    inset 0 -3px 5px rgba(255, 255, 255, 0.9),  
+    inset 0 4px 7px rgba(0, 0, 0, 0.2);   
+          
+  border-color: #b5b5b5 !important;
+  background-color: #f3f3f3 !important;
+ 
+} */
 
 @media (max-width: 468px) {
   .team .team-member {
@@ -1552,9 +1662,9 @@ section,
   transition: ease-in-out 0.3s;
 }
 
-.team .team-member:hover {
+/* .team .team-member:hover {
   transform: translateY(-10px);
-}
+} */
 
 .team .team-member .member-info {
   padding-left: 30px;
@@ -1606,6 +1716,7 @@ section,
 .team .team-member .social {
   margin-top: 12px;
   display: flex;
+  border-radius: 50% !important;
   align-items: center;
   justify-content: start;
   width: 100%;
@@ -1621,6 +1732,7 @@ section,
   background: color-mix(in srgb, var(--default-color), transparent 94%);
   transition: ease-in-out 0.3s;
   display: flex;
+  border-radius: 50% !important;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
@@ -1634,13 +1746,13 @@ section,
   margin: 0 2px;
 }
 
-.team .team-member .social a:hover {
+/* .team .team-member .social a:hover {
   background: var(--accent-color);
-}
+}*/
 
 .team .team-member .social a:hover i {
-  color: var(--contrast-color);
-}
+  color: var(--accent-color);
+} 
 
 .team .team-member .social a+a {
   margin-left: 8px;
