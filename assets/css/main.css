@@ -2793,3 +2793,14 @@ color: inherit;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+  .title-hero{
+    text-align: center;
+  }
+  
+  .p-hero{
+    text-align: center;
+  }
+  
+}
