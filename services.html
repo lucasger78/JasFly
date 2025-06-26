@@ -50,27 +50,13 @@
         <ul>
           <li class="item-navmenu"><a href="index.html">Inicio</a></li>
           <li class="dropdown item-navmenu"><a href="about.html"><span>Nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li class="item-navmenu"><a href="team.html">Equipo</a></li>
-              <li class="item-navmenu"><a href="testimonials.html">Testimonios</a></li>              
+           <ul>
+              <li class="item-navmenu"><a href="about.html#team">Equipo</a></li>
+              <li class="item-navmenu"><a href="about.html#testimonials">Testimonios</a></li>              
             </ul>
           </li>
-          <li class="dropdown item-navmenu"><a href="services.html" class="active"><span>Qué Hacemos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li class="item-navmenu"><a href="services.html" class="active">Servicios</a></li>
-              <li class="item-navmenu"><a href="flow.html">Flujo de Trabajo</a></li>
-              <li class="item-navmenu"><a href="tecnicalteam.html">Equipo Técnico</a></li>
-              <!-- <li class="dropdown item-navmenu"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li class="item-navmenu"><a href="#">Deep Dropdown 1</a></li>
-                  <li class="item-navmenu"><a href="#">Deep Dropdown 2</a></li>
-                  <li class="item-navmenu"><a href="#">Deep Dropdown 3</a></li>
-                  <li class="item-navmenu"><a href="#">Deep Dropdown 4</a></li>
-                  <li class="item-navmenu"><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li> -->
-            </ul>
-          </li>
+          <li class="item-navmenu"><a href="services.html" class="active"><span>Qué Hacemos</span></a></li>
+         
           <li class="item-navmenu"><a href="projects.html">Proyectos</a></li>
           <!-- <li class="item-navmenu"><a href="pricing.html">Pricing</a></li> -->
           <li class="item-navmenu contact-navmenu"><a href="contact.html">Contacto</a></li>
@@ -87,15 +73,23 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title light-background">
+     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Servicios</h1>
-        <nav class="breadcrumbs">
+        <!-- <h2 class="mb-2 mb-lg-0">Quiénes somos </h2> -->
+
+        <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestros</h2>
+        <p>Servicios<br></p>
+      </div>
+
+        
+        <nav class="breadcrumbs" id="minimenu">
           <ol>
             <li><a href="index.html">Inicio</a></li>
-            <li class="current">Servicios</li>
+            <li class="current">Qué Hacemos </li>
           </ol>
         </nav>
+        
       </div>
     </div><!-- End Page Title -->
 
@@ -106,65 +100,79 @@
 
         <div class="row gy-4">
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 services-box" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-briefcase icon flex-shrink-0"></i>
+              <i class="bi bi-geo-alt icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                <h4 class="title"><a href="#" class="stretched-link">Topografía</a></h4>
+                  <ul>
+                    <li><i class="bi bi-check2"></i> <span class="span-list">Nubes de puntos LiDAR clasificadas.</span></li><br>
+                    <li><i class="bi bi-check2"></i> <span class="span-list">Generación de Modelos Digitales de Elevación (MDE), de Terreno (MDT), de alturas de la vegetación y estructuras (CHM ó nDSM) y de elevación relativos (REM).</span></li><br>
+                    <li><i class="bi bi-check2"></i> <span class="span-list">Curvas de nivel de alta precisión.</span></li>
+                    
+                  </ul>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6 services-box" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
+              <i class="bi bi-camera icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                <h4 class="title"><a href="#" class="stretched-link">Fotogrametría</a></h4>
+                <ul>
+                  <li><i class="bi bi-check2"></i> <span class="span-list">Ortomosaicos RGB y Multiespectrales.</span></li>
+                </ul>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-6 services-box" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-bar-chart icon flex-shrink-0"></i>
+              <i class="bi bi-vector-pen icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                <h4 class="title"><a href="#" class="stretched-link">Vectorización</a></h4>
+                <ul>
+                    <li><i class="bi bi-check2"></i> <span class="span-list">Carreteras y Autopistas.</span></li><br>
+                    <li><i class="bi bi-check2"></i> <span class="span-list">Catastro de ciudades.</span></li><br>
+                    <li><i class="bi bi-check2"></i> <span class="span-list">Vectorización del alcantarillado, luminaria, etc.</span></li><br><br>
+                    
+                  </ul>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <!-- <div class="col-md-6 services-box" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-binoculars icon flex-shrink-0"></i>
+              <i class="bi bi-geo icon flex-shrink-0"></i>
+              <i class="bi bi-water icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <h4 class="title"><a href="#" class="stretched-link">Geología/Hidrología</a></h4>
+                <ul>
+                    <li><i class="bi bi-check2"></i> <span class="span-list">Modelos de ondulación geoidal locales (geoides).</span></li><br>
+                    <li><i class="bi bi-check2"></i> <span class="span-list">Estudios y simulaciones hidrológicos e hidráulicos.</span></li><br>                    
+                    
+                  </ul>
               </div>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-brightness-high icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div> -->
+         <div class="col-md-6 services-box" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item d-flex position-relative h-100">
+              <div class="icon-container flex-shrink-0" style="align-self: flex-start; margin-top: 0.5rem;">
+                <i class="bi bi-geo icon"></i>
+                <i class="bi bi-water icon"></i>
               </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                <h4 class="title"><a href="#" class="stretched-link">Geología/Hidrología</a></h4>
+                <ul class="service-features">
+                  <li><i class="bi bi-check2"></i> <span>Modelos de ondulación geoidal locales (geoides).</span></li>
+                  <li><i class="bi bi-check2"></i> <span>Estudios y simulaciones hidrológicos e hidráulicos.</span></li>
+                </ul>
               </div>
-            </div>
-          </div><!-- End Service Item -->
+          </div>
+         </div>
+          <!-- End Service Item -->
+          
 
         </div>
 
@@ -177,9 +185,21 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>Check Our Features<br></p>
+        <h2>Nuestro</h2>
+        <p>Flujo de Trabajo<br></p>
       </div><!-- End Section Title -->
+
+      <div class="tab-content team-member p-team">              
+
+          <div class="tab-pane fade show active">
+
+            <p class="p-services">En JASFLY sabemos que el éxito de un relevamiento geoespacial no solo depende de la tecnología, sino también de una metodología estructurada y rigurosa. Desde la etapa inicial de definición hasta la entrega del informe final, cada fase está diseñada para garantizar precisión, calidad y cumplimiento de los objetivos. Nuestro flujo de trabajo combina planificación detallada, control de calidad y profesionalismo, asegurando que los resultados satisfagan los requerimientos del proyecto.</p>
+
+          </div><!-- End Tab 1 Content -->             
+
+        </div><br><br>  
+
+      
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -187,19 +207,19 @@
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#features-tab-1">Modi sit est</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#features-tab-1">1. Inicio y Definición</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-2">Unde praesentium sed</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-2">2. Planificación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3">Pariatur explicabo vel</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3">3. Ejecución de Campo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-4">Nostrum qui quasi</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-4">4. Procesamiento y Control de Calidad</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-5">Iusto ut expedita aut</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-5">5. Entrega y Cierre</a>
               </li>
             </ul>
           </div>
@@ -208,9 +228,11 @@
               <div class="tab-pane active show" id="features-tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Architecto ut aperiam autem id</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                    <h3>Inicio y Definición</h3>
+                      <ul class="service-features">
+                        <li><i class="bi bi-check2"></i> <span>Reunión inicial (kickoff) con el cliente para validar alcance, precisiones esperadas, criterios de aceptación y cronograma. </span></li>
+                        <li><i class="bi bi-check2"></i> <span>Establecimiento del plan de comunicación y registro de riesgos.</span></li>
+                      </ul>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/tabs/tab-1.png" alt="" class="img-fluid">
@@ -220,9 +242,11 @@
               <div class="tab-pane" id="features-tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    <h3>Planificación</h3>
+                      <ul class="service-features">
+                          <li><i class="bi bi-check2"></i> <span>Diseño del plan de vuelo LiDAR y/o fotogramétrico • Plan de levantamiento de la red de apoyo GNSS diferencial (equipos, técnica, tiempos de observación).</span></li>
+                          
+                      </ul>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/tabs/tab-2.png" alt="" class="img-fluid">
@@ -232,9 +256,11 @@
               <div class="tab-pane" id="features-tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                    <h3>Ejecución de Campo</h3>
+                      <ul class="service-features">
+                        <li><i class="bi bi-check2"></i> <span>Despliegue de equipos y medición de la red GNSS. • Vuelos LiDAR y captura simultánea de imágenes RGB.</span></li>
+                        <li><i class="bi bi-check2"></i> <span>Validación en campo de cobertura y calidad preliminar de datos.</span></li>
+                      </ul>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/tabs/tab-3.png" alt="" class="img-fluid">
@@ -244,9 +270,14 @@
               <div class="tab-pane" id="features-tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                    <h3>Procesamiento y Control de Calidad</h3>
+                      <ul class="service-features">
+                        <li><i class="bi bi-check2"></i> <span>Procesamiento GNSS en gabinete: ajuste y validación de precisión de la red.</span></li>
+                        <li><i class="bi bi-check2"></i> <span> Procesamiento LiDAR: generación de nubes de puntos, clasificación semiautomática y/o Inteligencia Artificial y control manual de no conformidades.</span></li>
+                        <li><i class="bi bi-check2"></i> <span>Ortomosaico: ajuste radiométrico y control de uniformidad.</span></li>
+                        <li><i class="bi bi-check2"></i> <span>MDE/MDT: generación de tiles con informes de calidad absoluta y relativa.</span></li>
+                        <li><i class="bi bi-check2"></i> <span>Vectorización.</span></li>
+                      </ul>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/tabs/tab-4.png" alt="" class="img-fluid">
@@ -256,9 +287,11 @@
               <div class="tab-pane" id="features-tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    <h3>Entrega y Cierre</h3>
+                      <ul class="service-features">
+                        <li><i class="bi bi-check2"></i> <span>Descripción detallada de métodos, resultados de QC, metadatos y lecciones aprendidas.</span></li>
+                        <li><i class="bi bi-check2"></i> <span>Entrega de todos los productos en discos externos y copia de respaldo.</span></li>
+                      </ul>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/tabs/tab-5.png" alt="" class="img-fluid">

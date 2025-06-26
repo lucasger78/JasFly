@@ -87,6 +87,10 @@ h6 {
   font-family: var(--heading-font);
 }
 
+li{
+  list-style: none;
+}
+
 .title-hero{
   text-transform: uppercase;
 }
@@ -897,7 +901,7 @@ h6 {
 }
 
 #minimenu{
-  margin-top: 10px !important;
+  margin-top: -90px !important;
 }
 
 /*--------------------------------------------------------------
@@ -1055,6 +1059,7 @@ section,
   transition: 0.3s;
   box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
     0 1px 3px rgba(0, 0, 0, 0.3);
+  
 }
 
 .hero .btn-get-started:hover {
@@ -1064,6 +1069,12 @@ section,
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3),
         0 -1px 3px rgba(255, 255, 255, 0.8),
 }
+
+#btn-info2 {
+  display: block;
+  margin: 0 auto;
+}
+
 
 .hero .carousel-control-prev,
 .hero .carousel-control-next {
@@ -2010,6 +2021,30 @@ color: inherit;
   color: var(--accent-color);
 }
 
+.services-box .service-item {
+ padding: 8px 12px !important; /* Ajusta este valor para hacerlo más estrecho */
+  font-size: 14px;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 5px !important;
+  box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+    0 1px 3px rgba(0, 0, 0, 0.3);
+  color: inherit;
+  list-style: none;
+}
+
+.services-box .service-item:hover {
+  box-shadow: 
+     0 2px 4px rgba(0, 0, 0, 0.2),        /* Sombra exterior inferior */
+    inset 0 -3px 5px rgba(255, 255, 255, 0.9),  /* Luz superior interior (borde blanco arriba) */
+    inset 0 4px 7px rgba(0, 0, 0, 0.2);   /* Sombra interior inferior */
+          
+  border-color: #b5b5b5 !important;
+  background-color: #f3f3f3 !important;
+ 
+}
+
+
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
@@ -2860,8 +2895,72 @@ color: inherit;
     text-align: center;
   }
 
+  #btn-info2 {
+  display: block;
+  margin: 0 auto;
+}
+
   #btn-info2{
     text-align: center;
   }
   
 }
+
+
+/* Estilos para el contenedor de iconos */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px !important;
+  margin-right: 1rem;
+}
+
+/* Estilos para los iconos individuales */
+.icon-container .icon {
+  margin: 0.3rem 0; /* Espacio vertical entre iconos */
+  font-size: 1.5rem; /* Tamaño consistente con otros iconos */
+  color: inherit; /* Mantiene el color del tema */
+}
+
+/* Ajustes para la lista de características */
+.service-features {
+  list-style: none !important;
+  padding-left: 0;
+}
+
+.service-features li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 1.7rem;
+}
+
+.service-features .bi-check2 {
+  /*color: #3498db;  Color azul para los checks, ajustable */
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Espacio controlado entre iconos */
+  padding-top: 0 !important; 
+  margin-top: 0 !important;/* Ajuste fino para alinear con el título */
+}
+
+.service-item {
+  align-items: flex-start !important; /* Fuerza alineación superior */
+}
+
+.title {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.p-services{
+  font-weight: 400;
+}
+

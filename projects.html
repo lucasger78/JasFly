@@ -50,28 +50,14 @@
         <ul>
           <li class="item-navmenu"><a href="index.html">Inicio</a></li>
           <li class="dropdown item-navmenu"><a href="about.html"><span>Nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li class="item-navmenu"><a href="team.html">Equipo</a></li>
-              <li class="item-navmenu"><a href="testimonials.html">Testimonios</a></li>              
+           <ul>
+              <li class="item-navmenu"><a href="about.html#team">Equipo</a></li>
+              <li class="item-navmenu"><a href="about.html#testimonials">Testimonios</a></li>              
             </ul>
           </li>
-          <li class="dropdown item-navmenu"><a href="services.html"><span>Qué Hacemos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li class="item-navmenu"><a href="services.html">Servicios</a></li>
-              <li class="item-navmenu"><a href="flow.html">Flujo de Trabajo</a></li>
-              <li class="item-navmenu"><a href="tecnicalteam.html">Equipo Técnico</a></li>
-              <!-- <li class="dropdown item-navmenu"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li class="item-navmenu"><a href="#">Deep Dropdown 1</a></li>
-                  <li class="item-navmenu"><a href="#">Deep Dropdown 2</a></li>
-                  <li class="item-navmenu"><a href="#">Deep Dropdown 3</a></li>
-                  <li class="item-navmenu"><a href="#">Deep Dropdown 4</a></li>
-                  <li class="item-navmenu"><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li> -->
-            </ul>
-          </li>
-          <li class="item-navmenu"><a href="projects.html" class="active">Proyectos</a></li>
+          <li class="item-navmenu"><a href="services.html" class="active"><span>Qué Hacemos</span></a></li>
+         
+          <li class="item-navmenu"><a href="projects.html">Proyectos</a></li>
           <!-- <li class="item-navmenu"><a href="pricing.html">Pricing</a></li> -->
           <li class="item-navmenu contact-navmenu"><a href="contact.html">Contacto</a></li>
           <!-- <li class="item-navmenu"><a href="faqs.html">FAQs</a></li> -->
@@ -86,16 +72,24 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title light-background">
+   <!-- Page Title -->
+     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Portfolio</h1>
-        <nav class="breadcrumbs">
+        <!-- <h2 class="mb-2 mb-lg-0">Quiénes somos </h2> -->
+
+        <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestros</h2>
+        <p>Proyectos<br></p>
+      </div>
+
+        
+        <nav class="breadcrumbs" id="minimenu">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio</li>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="current">Proyectos </li>
           </ol>
         </nav>
+        
       </div>
     </div><!-- End Page Title -->
 
@@ -115,7 +109,7 @@
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app about-img">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 1</h4>
@@ -125,7 +119,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product about-img">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 1</h4>
@@ -135,7 +129,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding about-img">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 1</h4>
@@ -145,7 +139,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app about-img">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 2</h4>
@@ -155,7 +149,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product about-img">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 2</h4>
@@ -165,7 +159,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding about-img">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 2</h4>
@@ -175,7 +169,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app about-img">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 3</h4>
@@ -185,7 +179,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product about-img">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 3</h4>
