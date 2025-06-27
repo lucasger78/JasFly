@@ -2964,3 +2964,52 @@ color: inherit;
   font-weight: 400;
 }
 
+.about-img-portfolio {
+  position: relative;
+  margin: 10px !important; /* Margen externo para separar las imágenes */
+  display: inline-block; /* Asegura que el margen se aplique correctamente */
+  box-sizing: border-box; /* Incluye border/padding en el cálculo del ancho */
+  
+  
+}
+
+.about-img-portfolio img {
+  display: block; /* Elimina espacio fantasma debajo de la imagen */
+  width: 100%; /* Asegura que la imagen llene el contenedor */
+  height: auto;
+  padding: 0 !important; /*  Ajusta este valor para hacerlo más estrecho */
+  font-size: 14px;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 5px !important;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) !important; */
+  box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+    0 1px 3px rgba(0, 0, 0, 0.3);
+  color: inherit;
+  filter: grayscale(100%);
+}
+
+.about-img-portfolio:hover img {
+  box-shadow: 
+     0 2px 4px rgba(0, 0, 0, 0.2),        /* Sombra exterior inferior */
+    inset 0 -3px 5px rgba(255, 255, 255, 0.9),  /* Luz superior interior (borde blanco arriba) */
+    inset 0 4px 7px rgba(0, 0, 0, 0.2);   /* Sombra interior inferior */
+          
+  border-color: #b5b5b5 !important;
+  background-color: #f3f3f3 !important;
+  filter: grayscale(0%);
+ 
+}
+
+.about-img-portfolio:before {
+  position: absolute;
+  inset: -60px 0 0 -60px;
+  content: "";
+  /* background: url("../img/about-bg.png") top left; */
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.about-img-portfolio {
+  position: relative;
+  z-index: 2;
+}
