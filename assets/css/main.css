@@ -94,8 +94,8 @@ li{
 .title-hero{
   font-size: 60px;
   font-weight: 600;
-  text-transform: uppercase;
- 
+  text-transform: uppercase; 
+  font-style: italic;
   text-shadow: #d6d6d6 1px 1px 8px;
 }
 
