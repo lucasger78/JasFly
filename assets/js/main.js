@@ -149,6 +149,13 @@
         });
         if (typeof aosInit === 'function') {
           aosInit();
+          // Reaplica clases y estilos personalizados después del reordenamiento
+          initIsotope.on('arrangeComplete', function() {
+            document.querySelectorAll('.about-img-portfolio img').forEach(img => {
+              img.style.filter = 'grayscale(100%)';
+            });
+          });
+
         }
       }, false);
     });
