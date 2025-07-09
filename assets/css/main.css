@@ -91,7 +91,7 @@ li{
   list-style: none;
 }
 
-.title-hero{
+/* .title-hero{
   font-size: 60px;
   font-weight: 600;
   text-transform: uppercase; 
@@ -101,6 +101,42 @@ li{
 
 .span-hero{
   color:#1d93c8;
+} */
+
+.logo-hero {
+  height: 60px !important; /* Ajusta este valor según tus medidas */
+  width: auto !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  position: relative !important;
+  /* top: 10px !important; Ajusta este valor para moverlo más abajo */
+  margin-left: 15px !important; /* Espacio entre el texto y el logo */
+  border-radius: 10% !important;
+  background-color: rgb(214, 214, 214, .5) ;
+  box-shadow: #d6d6d6 1px 1px 12px !important;
+}
+
+.arrow-down-index{  
+  display: inline-block;
+  font-size: 2.5rem; 
+  color: #31344b; 
+  transition: all 0.3s ease; 
+}
+
+.arrow-down-index:hover {
+  transform: translateY(10px); 
+  color: #1d93c8; 
+  animation: bounce 0.5s infinite alternate; /* Animación de rebote */
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }
 
 .p-hero{
@@ -108,9 +144,9 @@ li{
   font-family: var(--heading-font);
   font-weight: 700;
   text-align: center;
-  background-color: rgb(214, 214, 214, .5) ;
-   
+  background-color: rgb(214, 214, 214, .5) ;  
   box-shadow: #d6d6d6 1px 1px 8px;
+  margin-top: 20px;
 }
 
 /* PHP Email Form Messages
