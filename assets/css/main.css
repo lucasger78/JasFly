@@ -104,7 +104,7 @@ li{
 } */
 
 .logo-hero {
-  height: 150px !important; /* Ajusta este valor según tus medidas */
+  height: 150px !important;
   width: auto !important;
   display: inline-block !important;
   vertical-align: middle !important;
@@ -115,6 +115,8 @@ li{
   background-color: rgb(214, 214, 214, .5) ;
   box-shadow: #d6d6d6 1px 1px 12px !important;
 }
+
+
 
 .arrow-down-index{  
   display: inline-block;
@@ -2930,6 +2932,13 @@ color: inherit;
   .title-hero{
     text-align: center;
   }
+
+  .logo-hero{
+    height: 90px !important;
+    width: auto !important;
+  }
+
+
   
   .p-hero{
     text-align: center;
