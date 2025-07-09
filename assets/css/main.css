@@ -104,7 +104,7 @@ li{
 } */
 
 .logo-hero {
-  height: 60px !important; /* Ajusta este valor según tus medidas */
+  height: 150px !important; /* Ajusta este valor según tus medidas */
   width: auto !important;
   display: inline-block !important;
   vertical-align: middle !important;
