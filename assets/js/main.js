@@ -233,3 +233,162 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// /**
+//  * =============================================
+//  * MODE OSCURO - IMPLEMENTACIÓN COMPLETA
+//  * =============================================
+//  */
+
+// // 1. Configuración inicial
+// const darkModeToggle = document.createElement('button');
+// darkModeToggle.id = 'darkModeToggle';
+// darkModeToggle.className = 'dark-mode-toggle';
+// darkModeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+// darkModeToggle.setAttribute('aria-label', 'Alternar modo oscuro');
+
+// // 2. Añadir el botón al DOM (preferiblemente en el header)
+// const header = document.querySelector('header');
+// if (header) {
+//     header.appendChild(darkModeToggle);
+// } else {
+//     document.body.insertAdjacentElement('afterbegin', darkModeToggle);
+// }
+
+// // 3. Verificar preferencias del sistema y localStorage
+// function checkDarkModePreference() {
+//     const savedTheme = localStorage.getItem('theme');
+//     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+//     return savedTheme ? savedTheme === 'dark' : systemPrefersDark;
+// }
+
+// // 4. Aplicar el tema
+// function applyTheme(isDark) {
+//     const html = document.documentElement;
+    
+//     if (isDark) {
+//         html.setAttribute('data-theme', 'dark');
+//         darkModeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+//         localStorage.setItem('theme', 'dark');
+//     } else {
+//         html.removeAttribute('data-theme');
+//         darkModeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+//         localStorage.setItem('theme', 'light');
+//     }
+    
+//     // Ajustar el logo según el tema
+//     const logos = document.querySelectorAll('.logo-hero, .logo-img, .logo-image, .logo-image2');
+//     logos.forEach(logo => {
+//         logo.style.filter = isDark ? 'brightness(0) invert(1)' : 'none';
+//     });
+// }
+
+// // 5. Alternar el tema
+// function toggleTheme() {
+//     const isDark = !document.documentElement.hasAttribute('data-theme');
+//     applyTheme(isDark);
+// }
+
+// // 6. Event Listeners
+// darkModeToggle.addEventListener('click', toggleTheme);
+
+// // Escuchar cambios en las preferencias del sistema
+// window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+//     if (!localStorage.getItem('theme')) {
+//         applyTheme(e.matches);
+//     }
+// });
+
+// // 7. Inicialización al cargar la página
+// document.addEventListener('DOMContentLoaded', () => {
+//     const isDark = checkDarkModePreference();
+//     applyTheme(isDark);
+    
+//     // Asegurar que el botón sea visible después de la carga
+//     setTimeout(() => {
+//         darkModeToggle.style.opacity = '1';
+//     }, 300);
+// });
+
+// // 8. Estilos dinámicos para el botón (puedes mover esto a tu CSS)
+// const style = document.createElement('style');
+// style.textContent = `
+// .dark-mode-toggle {
+//     position: fixed;
+//     top: 20px;
+//     right: 20px;
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 50%;
+//     background: var(--accent-color);
+//     color: var(--contrast-color);
+//     border: none;
+//     cursor: pointer;
+//     z-index: 9999;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     transition: all 0.3s ease;
+//     opacity: 0;
+//     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+// }
+
+// .dark-mode-toggle:hover {
+//     transform: scale(1.1);
+//     background: color-mix(in srgb, var(--accent-color), transparent 20%);
+// }
+
+// .dark-mode-toggle i {
+//     font-size: 1.2rem;
+// }
+
+// [data-theme="dark"] {
+//     --background-color: #121212;
+//     --default-color: #e6e7ee;
+//     --heading-color: #ffffff;
+//     --accent-color: #1d93c8;
+//     --surface-color: #1e1e1e;
+//     --contrast-color: #ffffff;
+//     --nav-color: #e6e7ee;
+//     --nav-hover-color: #1d93c8;
+//     --nav-mobile-background-color: #1e1e1e;
+//     --nav-dropdown-background-color: #2a2a2a;
+//     --nav-dropdown-color: #e6e7ee;
+//     --nav-dropdown-hover-color: #1d93c8;
+// }
+
+// [data-theme="dark"] .hero .carousel-item:before {
+//     background: rgba(30, 30, 30, 0.7);
+// }
+
+// [data-theme="dark"] .footer {
+//     background-color: #1a1a1a;
+//     color: #e6e7ee;
+// }
+
+// [data-theme="dark"] .footer .footer-links ul a {
+//     color: #b0b0b0;
+// }
+
+// [data-theme="dark"] .footer .footer-links ul a:hover {
+//     color: #ffffff;
+// }
+
+// [data-theme="dark"] .about-img-portfolio img {
+//     filter: grayscale(30%);
+// }
+
+// [data-theme="dark"] .about-img-portfolio:hover img {
+//     filter: grayscale(0%);
+// }
+
+// [data-theme="dark"] .proyectos-info {
+//     background: rgba(30, 30, 30, 0.85) !important;
+//     color: #e6e7ee !important;
+// }
+
+// [data-theme="dark"] .proyectos-info-content p {
+//     color: #b0b0b0 !important;
+// }
+// `;
+// document.head.appendChild(style);
