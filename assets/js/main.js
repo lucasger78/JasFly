@@ -230,3 +230,6 @@ document.addEventListener('DOMContentLoaded', function() {
     track.style.animationPlayState = 'running';
   });
 });
+
+
+
