@@ -153,7 +153,7 @@ li{
 
 /* PHP Email Form Messages
 ------------------------------*/
-.php-email-form .error-message {
+/* .php-email-form .error-message {
   display: none;
   background: #df1529;
   color: #ffffff;
@@ -191,7 +191,7 @@ li{
   border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
   animation: php-email-form-loading 1s linear infinite;
-}
+} */
 
 @keyframes php-email-form-loading {
   0% {

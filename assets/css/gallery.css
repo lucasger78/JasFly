@@ -85,25 +85,18 @@
 
     /* PROJECT DETAILS GALLERY */
 
-    .project-descriptions {
-  /* background-color: var(--surface-color);
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  position: relative;
-  border-radius: 5px;
-  transition: 0.5s;
-  padding: 30px;
-  height: 100%; */
-   /* display: inline-block; */
-  padding: 8px 12px !important; /* Ajusta este valor para hacerlo más estrecho */
-  font-size: 14px;
-  border: 1px solid #d6d6d6 !important;
-  border-radius: 5px !important;
-  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) !important; */
-  box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
-    0 1px 3px rgba(0, 0, 0, 0.3);
-  /* white-space: nowrap;
-  text-decoration: none; */
-  color: inherit;
+.project-descriptions {
+  
+      padding: 8px 12px !important; /* Ajusta este valor para hacerlo más estrecho */
+      font-size: 14px;
+      border: 1px solid #d6d6d6 !important;
+      border-radius: 5px !important;
+      /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) !important; */
+      box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+        0 1px 3px rgba(0, 0, 0, 0.3);
+      /* white-space: nowrap;
+      text-decoration: none; */
+      color: inherit;
 }
 
 .project-descriptions:hover {
@@ -114,6 +107,33 @@
           
   border-color: #b5b5b5 !important;
   background-color: #f3f3f3 !important;
+ 
+}
+
+.project-gallery {
+
+      padding: 12px  !important; 
+      justify-content: center  !important;
+      align-items: center !important; 
+      font-size: 14px;
+      border: 1px solid #d6d6d6 !important;
+      border-radius: 5px !important;
+      /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) !important; */
+      box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+        0 1px 3px rgba(0, 0, 0, 0.3);
+      /* white-space: nowrap;
+      text-decoration: none; */
+      color: inherit;
+}
+
+.project-gallery:hover {
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.2),        /* Sombra exterior inferior */
+      inset 0 -3px 5px rgba(255, 255, 255, 0.9),  /* Luz superior interior (borde blanco arriba) */
+      inset 0 4px 7px rgba(0, 0, 0, 0.2);   /* Sombra interior inferior */
+            
+    border-color: #b5b5b5 !important;
+    background-color: #f3f3f3 !important;
  
 }
 
