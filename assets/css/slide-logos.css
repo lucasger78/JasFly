@@ -1,0 +1,46 @@
+.logo-slider {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      width: 100%;
+      padding: 10px 0;
+      /* background: #f8f9fa; */
+    }
+
+    .logo-track {
+      display: inline-flex;
+      animation: scroll-left 20s linear infinite;
+    }
+
+    .client-logo {
+      flex: 0 0 auto;
+      width: 220px;
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .client-logo img {
+      height: auto;
+      max-width: 200px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .client-logo img:hover {
+      filter: grayscale(0%);
+    }
+
+    /* Animación de deslizamiento */
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Pausar al hacer hover */
+    .logo-slider:hover .logo-track {
+      animation-play-state: paused;
+    }

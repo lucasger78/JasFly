@@ -61,7 +61,7 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  color: var(--default-color);
+  color: whitesmoke;
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
@@ -151,47 +151,6 @@ li{
   margin-top: 20px;
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-/* .php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-} */
 
 @keyframes php-email-form-loading {
   0% {
@@ -223,12 +182,12 @@ li{
 .header .logo img {
   max-height: 36px;
   margin-right: 8px;
-  border: #d6d6d6 1px solid;
+  /* border: #d6d6d6 1px solid; */
   padding: 0 10px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-  box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
-    0 1px 3px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+    0 1px 3px rgba(0, 0, 0, 0.3); */
 }
 
 /* .item-navmenu{
@@ -241,49 +200,50 @@ li{
 } */
 
 /* Estilos para los items principales */
-.navmenu ul li.item-navmenu {
-  padding: 0 !important; /* Elimina cualquier padding en el li */
-  margin: 0 4px !important; /* Solo margen horizontal */
+.navmenu ul li{
+  padding: 0 !important; 
+  margin: 0 4px !important; 
   min-width: auto !important;
   width: auto !important;
 }
 
 /* Estilos para los enlaces dentro de los items */
-.navmenu ul li.item-navmenu > a {
+.navmenu ul li > a {
   display: inline-block;
-  padding: 8px 12px !important; /* Ajusta este valor para hacerlo más estrecho */
-  font-size: 14px;
-  border: 1px solid #d6d6d6 !important;
-  border-radius: 5px !important;
+  padding: 8px 12px !important; 
+  font-size: 16px !important;
+  /* border: 1px solid #d6d6d6 !important;
+  border-radius: 5px !important; */
   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) !important; */
-  box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+  /* box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
     0 1px 3px rgba(0, 0, 0, 0.3);
-  white-space: nowrap;
+  white-space: nowrap; */
   text-decoration: none;
   color: inherit;
 }
 
 
-.navmenu ul li.item-navmenu > a:hover {
-  box-shadow: 
-     0 2px 4px rgba(0, 0, 0, 0.2),        /* Sombra exterior inferior */
-    inset 0 -3px 5px rgba(255, 255, 255, 0.9),  /* Luz superior interior (borde blanco arriba) */
-    inset 0 4px 7px rgba(0, 0, 0, 0.2);   /* Sombra interior inferior */
+.navmenu ul li> a:hover {
+  /* box-shadow: 
+     0 2px 4px rgba(0, 0, 0, 0.2),       
+    inset 0 -3px 5px rgba(255, 255, 255, 0.9), 
+    inset 0 4px 7px rgba(0, 0, 0, 0.2);   
           
   border-color: #b5b5b5 !important;
-  background-color: #f3f3f3 !important;
+  background-color: #f3f3f3 !important; */
+  color: #b5b5b5;
  
 }
 
 
 
 /* Estilos para el dropdown (para mantener consistencia) */
-.navmenu ul li.dropdown.item-navmenu > a {
+.navmenu ul li.dropdown> a {
   padding-right: 25px !important; /* Espacio para el icono */
 }
 
 /* Estilos para los items del dropdown */
-.navmenu ul ul li.item-navmenu > a {
+.navmenu ul ul li> a {
   padding: 4px 12px !important;
 }
 
@@ -329,13 +289,7 @@ li{
   
 }
 
-/* #btn-info{
-  font-family: var(--default-font) !important;
-}
 
-#btn-info2{
-  font-family: var(--default-font) !important;
-} */
 
 .read-more{
   color: var(--contrast-color);
@@ -390,13 +344,13 @@ li{
     height: auto;
     max-height: 36px;
     margin-right: 8px;
-    border: #d6d6d6 1px solid;
+    /* border: #d6d6d6 1px solid; */
     padding: 0 10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+    /* box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
     0 1px 3px rgba(0, 0, 0, 0.3);
-    border-bottom: #d6d6d6 1px solid;
+    border-bottom: #d6d6d6 1px solid; */
   }
 
   .logo-image2{
@@ -404,13 +358,13 @@ li{
     height: auto;
     max-height: 36px;
     margin-right: 8px;
-    border: #d6d6d6 1px solid;
+    /* border: #d6d6d6 1px solid; */
     padding: 0 10px;
-    border-radius: 5px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
+    /* border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
     0 1px 3px rgba(0, 0, 0, 0.3);
-    border-bottom: #d6d6d6 1px solid;
+    border-bottom: #d6d6d6 1px solid; */
   }
   
   .navmenu {
@@ -434,7 +388,7 @@ li{
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 15px;
+    font-size: 18px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
@@ -970,7 +924,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   position: relative;  
   width: 80%;
 }
@@ -1048,7 +1002,7 @@ section,
 
 .hero .carousel-item:before {
   content: "";
-  background: color-mix(in srgb, #e6e7ee, transparent 50%);
+  background: color-mix(in srgb, #e6e7ee, transparent 80%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -3465,3 +3419,13 @@ color: inherit;
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+
+
+
+
+/* PRUEBA NAV */
+
+/* #text-nav{
+  font-size: 30px;
+} */

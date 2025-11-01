@@ -26,33 +26,32 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/slide-logos.css" rel="stylesheet">
 
   
 </head>
 
-<body class="index-page">
+<body class="index-page" style="background-color: white;">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center sticky-top" style="background-color: white;">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
 
-        <img src="assets/img/logo.png" alt="logotipo" class="logo-image">
+        <img src="assets/img/logo.png" alt="logotipo">
       </a>
 
-       <nav  class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="about.html"><span>Nosotros</span></a></li>
-          <li><a href="services.html"><span>Qué Hacemos</span></a></li>         
-          <li><a href="projects.html">Proyectos</a></li>          
-          <li><a href="#">Contacto</a></li>          
+      <nav id="navmenu" class="navmenu">
+        <ul class="text-nav">
+          <li  class="text-nav"><a href="index.html">Inicio</a></li>
+          <li  class="text-nav"><a href="about.html"><span>Nosotros</span></a></li>
+          <li  class="text-nav"><a href="services.html" class="active"><span>Qué Hacemos</span></a></li>         
+          <li  class="text-nav"><a href="projects.html">Proyectos</a></li>          
+          <li  class="text-nav"><a href="#">Contacto</a></li>          
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" id="btn-info" href="faqs.html">FAQs</a>
+      <a class="navmenu" href="faqs.html">FAQs</a>
 
     </div>
   </header>
@@ -60,7 +59,7 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background" style="background-color: white;">
 
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
@@ -79,28 +78,54 @@
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section" style="background-color: white;">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Sobre</h2>
         <p>Nosotros<br></p>
       </div><!-- End Section Title -->
-      
-      <div class="tab-content team-member p-team">              
+
+      <!-- <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Nos enorgullece ser la única empresa en Argentina que cuenta con un escáner láser específicamente diseñado para helicópteros, lo que nos permite ofrecer servicios de relevamiento con la más alta precisión, resolución y versatilidad. 
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span class="span-list">Únicos en Argentina con un escáner láser especializado para helicópteros.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span class="span-list">Relevamientos con altos estándares de precisión, resolución y versatilidad.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span class="span-list">Digitalización basada en datos georreferenciados de alta precisión.</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>Creemos que la digitalización basada en información georreferenciada de alta precisión forma la base fundamental para comprender, diseñar y resolver los complejos desafíos de nuestra realidad. </p>
+            <a href="about.html" class="btn-getstarted"><span>Leer Más</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div> -->
+      <div class="tab-content team-member p-team" style="background-color: white;">              
 
         <div class="tab-pane fade show active">
           <r class="about-items">
-            <b>JASFLY S.A.</b> es una empresa argentina especializada en operaciones aéreas con helicópteros y sensores remotos de alta precisión. Su experiencia abarca proyectos de mapeo de alta resolución en colaboración con gobiernos provinciales, municipios, organismos ambientales y empresas del sector energético.<br><br>
+            JASFLY S.A. es una empresa argentina especializada en operaciones aéreas con helicópteros y sensores remotos de alta precisión. Su experiencia abarca proyectos de mapeo de alta resolución en colaboración con gobiernos provinciales, municipios, organismos ambientales y empresas del sector energético.<br><br>
             La empresa cuenta con alianzas estratégicas con proveedores tecnológicos líderes en Europa y América, lo que garantiza el acceso a equipamiento de última generación y estándares internacionales de operación. Sus protocolos de captura, procesamiento y control de calidad están alineados con normativas reconocidas a nivel global tales como ASPRS Positional Accuracy Standards adaptados a las particularidades del territorio argentino.<br><br>
-            En <b>JASFLY S.A.</b> hemos desarrollado proyectos en áreas tales como: 
-            <br>         
+            A la fecha, JASFLY S.A. ha desarrollado proyectos en áreas tales como:
+
           
-           Generación de gemelos digitales urbanos y rurales.
-           Evaluación de riesgo ambiental y planificación territoria.
-           Relevamientos de infraestructura, catastros y fiscalización tributaria.
-           Desarrollo de cartografía temática y soporte a Sistemas de Información Geográfica (SIG) para organismos gubernamentales.
           </p>
+
+          <ul>
+            <li><i class="bi bi-check2-circle"></i> <span class="span-list">Generación de gemelos digitales urbanos y rurales.</span></li>
+            <li><i class="bi bi-check2-circle"></i> <span class="span-list">Evaluación de riesgo ambiental y planificación territoria.</span></li>
+            <li><i class="bi bi-check2-circle"></i> <span class="span-list">Relevamientos de infraestructura, catastros y fiscalización tributaria.</span></li>
+            <li><i class="bi bi-check2-circle"></i> <span class="span-list">Desarrollo de cartografía temática y soporte a Sistemas de Información Geográfica (SIG) para organismos gubernamentales.</span></li>
+          </ul>
 
           <p class="about-items">Creemos que la digitalización basada en información georreferenciada de alta precisión forma la base fundamental para comprender, diseñar y resolver los complejos desafíos de nuestra realidad. </p>
 
@@ -118,49 +143,37 @@
       </div>
       <!-- End Section Title -->
 
-      <div class="logo-slider" data-aos="fade-up">
-    <div class="logo-track">
-      <!-- Primer conjunto de logos -->
-      <div class="client-logo">
-        <img src="assets/img/clients/client-1.png" alt="Client 1">
-      </div>
-      <div class="client-logo">
-        <img src="assets/img/clients/client-2.png" alt="Client 2">
-      </div>
-      <div class="client-logo">
-        <img src="assets/img/clients/client-3.png" alt="Client 3">
-      </div>
-      <div class="client-logo">
-        <img src="assets/img/clients/client-4.png" alt="Client 4">
-      </div>
-      <div class="client-logo">
-        <img src="assets/img/clients/client-5.png" alt="Client 5">
-      </div>
-      <div class="client-logo">
-        <img src="assets/img/clients/client-6.png" alt="Client 6">
-      </div>
+      <div class="container" data-aos="fade-up">
 
-      <!-- Duplicamos para efecto infinito -->
-      <div class="client-logo">
-        <img src="assets/img/clients/client-1.png" alt="Client 1">
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
       </div>
-      <div class="client-logo">
-        <img src="assets/img/clients/client-2.png" alt="Client 2">
-      </div>
-      <div class="client-logo">
-        <img src="assets/img/clients/client-3.png" alt="Client 3">
-      </div>
-      <div class="client-logo">
-        <img src="assets/img/clients/client-4.png" alt="Client 4">
-      </div>
-      <div class="client-logo">
-        <img src="assets/img/clients/client-5.png" alt="Client 5">
-      </div>
-      <div class="client-logo">
-        <img src="assets/img/clients/client-6.png" alt="Client 6">
-      </div>
-    </div>
-  </div>
 
     </section>
     <!-- /Clients Section -->
