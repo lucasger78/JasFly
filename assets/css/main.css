@@ -1196,6 +1196,11 @@ section,
 
 .about-items{
   margin-bottom: 50px; 
+  color: #31344b;
+}
+
+.ul-faqs{  
+  color: #31344b;
 }
 
 .member-info .social-links a {
