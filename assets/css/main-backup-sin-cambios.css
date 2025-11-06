@@ -40,7 +40,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: whitesmoke;
+  --background-color: #e6e7ee;
   --surface-color: #e6e7ee;
 }
 
@@ -906,8 +906,7 @@ li{
 section,
 .section {
   color: var(--default-color);
-  /* background-color: var(--background-color); */
-  background-color: whitesmoke;
+  background-color: var(--background-color);
   padding: 60px 0;
   scroll-margin-top: 90px;
   overflow: clip;
