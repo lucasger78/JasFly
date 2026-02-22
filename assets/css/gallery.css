@@ -8,8 +8,6 @@
       min-height: 100vh;
     }
  
- 
- 
  .gallery {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -79,8 +77,21 @@
       color: #616794;
     }
 
-    .overlay h3:hover {
+    /* .overlay h3:hover {
       color: #616794;
+    } */
+
+    .title-overlay-project {
+      font-size: medium !important;
+       transition: font-size 0.3s ease;
+    }
+
+    .title-overlay-project:hover {
+      font-size: x-large !important;
+    }
+    
+    .ver-mas-overlay-project {
+      font-size: medium !important;
     }
 
     /* PROJECT DETAILS GALLERY */

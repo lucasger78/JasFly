@@ -884,6 +884,8 @@ li{
   font-weight: 400;
 }
 
+
+
 .page-title .breadcrumbs ol li+li {
   padding-left: 10px;
   
@@ -896,8 +898,11 @@ li{
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
+
+
 #minimenu{
   margin-top: -90px !important;
+  margin-bottom: 10px !important;
 }
 
 /*--------------------------------------------------------------
@@ -1135,6 +1140,8 @@ section,
     transform: translate3d(0, 0, 0);
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # About Section
@@ -1410,10 +1417,18 @@ section,
 /*--------------------------------------------------------------
 # About 2 Section
 --------------------------------------------------------------*/
+
+.title-about{
+  margin-bottom: 10px !important;
+}
+
+
 .about-2 .about-img {
   position: relative;
   margin: 0 0 0 60px;
 }
+
+
 .about-2 .about-img {
  /* padding: 2px 6px !important;  Ajusta este valor para hacerlo más estrecho */
   font-size: 14px;
@@ -1422,7 +1437,7 @@ section,
   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) !important; */
   box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.8),
     0 1px 3px rgba(0, 0, 0, 0.3);
-color: inherit;
+  color: inherit;
 }
 
 .about-2 .about-img:hover {
@@ -1440,8 +1455,8 @@ color: inherit;
   position: absolute;
   inset: -60px 0 0 -60px;
   content: "";
-  background: url("../img/about-bg.png") top left;
-  background-repeat: no-repeat;
+  /* background: url("../img/about-bg.png") top left;
+  background-repeat: no-repeat; */
   z-index: 1;
 }
 
@@ -1449,6 +1464,28 @@ color: inherit;
   position: relative;
   z-index: 2;
 }
+
+
+.about-img {
+  /* position: absolute; */
+  margin-top: -10px !important;
+  width: 60vw;
+  height: 70vh;
+  overflow: hidden;
+  padding: 10px !important;
+  left: 20%;
+  
+}
+
+.about-img img {
+  width: 55vw; /* el doble del ancho de la pantalla */
+  height: auto;
+  /* position: absolute; */
+  margin-left: 50% !important;
+  transform: translateX(-50%);
+  /* object-fit: cover; */
+}
+
 
 @media (max-width: 575px) {
   .about-2 .about-img {
