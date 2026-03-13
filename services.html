@@ -25,7 +25,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
  
 </head>
@@ -33,28 +33,41 @@
 <body class="services-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <img src="assets/img/logo.png" alt="logotipo" class="logo-image">
+    </a>
 
-        <img src="assets/img/logo.png" alt="logotipo" class="logo-image">
-      </a>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li class="item-navmenu"><a href="index.html" data-section="nav" data-value="inicio">Inicio</a></li>
+        <li class="item-navmenu"><a href="about.html"><span data-section="nav" data-value="nosotros">Nosotros</span></a></li>
+        <li class="item-navmenu"><a href="services.html" class="active"><span data-section="nav" data-value="queHacemos">Qué Hacemos</span></a></li>
+        <li class="item-navmenu"><a href="projects.html" data-section="nav" data-value="proyectos">Proyectos</a></li>
+        <li class="item-navmenu contact-navmenu"><a href="contact.html" data-section="nav" data-value="contacto">Contacto</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li class="item-navmenu"><a href="index.html">Inicio</a></li>
-          <li class="item-navmenu"><a href="about.html"><span>Nosotros</span></a></li>
-          <li class="item-navmenu"><a href="services.html" class="active"><span>Qué Hacemos</span></a></li>         
-          <li class="item-navmenu"><a href="projects.html">Proyectos</a></li>
-          <li class="item-navmenu contact-navmenu"><a href="contact.html">Contacto</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" id="btn-info" href="faqs.html">FAQs</a>
+    <a class="btn-getstarted" id="btn-info" href="faqs.html" data-section="nav" data-value="faqs">FAQs</a>
 
     </div>
-  </header>
+
+    <div id="flags" class="flags flags_img">
+      <div class="flags_items flags-ar" data-language="es">
+        <img src="img/iconos/ar.svg" alt="es"/>
+      </div>
+      <div class="flags_items flags-gb" data-language="en">
+        <img src="img/iconos/gb.svg" alt="en"/>
+      </div>
+      <div class="flags_items flags-br" data-language="por">
+        <img src="img/iconos/br.svg" alt="por"/>
+      </div>
+    </div>
+
+  
+</header>
 
   <main class="main">
 
@@ -64,15 +77,15 @@
         <!-- <h2 class="mb-2 mb-lg-0">Quiénes somos </h2> -->
 
         <div class="container section-title" data-aos="fade-up">
-        <h2>Nuestros</h2>
-        <p>Servicios<br></p>
+        <h2 data-section="services" data-value="paginaTituloH2">Nuestros</h2>
+        <p data-section="services" data-value="paginaTituloP">Servicios<br></p>
       </div>
 
         
         <nav class="breadcrumbs" id="minimenu">
           <ol>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="current">Qué Hacemos </li>
+            <li><a href="index.html" data-section="nav" data-value="inicio">Inicio</a></li>
+            <li class="current" data-section="services" data-value="breadcrumbCurrent">Qué Hacemos</li>
           </ol>
         </nav>
         
@@ -90,11 +103,11 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-geo-alt icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Topografía</a></h4>
+                <h4 class="title"><a href="#" class="stretched-link" data-section="services" data-value="topografiaTitulo">Topografía</a></h4>
                   <ul>
-                    <li><i class="bi bi-check2"></i> <span class="span-list">Nubes de puntos LiDAR clasificadas.</span></li><br>
-                    <li><i class="bi bi-check2"></i> <span class="span-list">Generación de Modelos Digitales de Elevación (MDE), de Terreno (MDT), de alturas de la vegetación y estructuras (CHM ó nDSM) y de elevación relativos (REM).</span></li><br>
-                    <li><i class="bi bi-check2"></i> <span class="span-list">Curvas de nivel de alta precisión.</span></li>
+                    <li><i class="bi bi-check2"></i> <span class="span-list" data-section="services" data-value="topografia1">Nubes de puntos LiDAR clasificadas.</span></li><br>
+                    <li><i class="bi bi-check2"></i> <span class="span-list" data-section="services" data-value="topografia2">Generación de Modelos Digitales de Elevación (MDE), de Terreno (MDT), de alturas de la vegetación y estructuras (CHM ó nDSM) y de elevación relativos (REM).</span></li><br>
+                    <li><i class="bi bi-check2"></i> <span class="span-list" data-section="services" data-value="topografia3">Curvas de nivel de alta precisión.</span></li>
                     
                   </ul>
               </div>
@@ -105,9 +118,9 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-camera icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Fotogrametría</a></h4>
+                <h4 class="title"><a href="#" class="stretched-link" data-section="services" data-value="fotogrametriaTitulo">Fotogrametría</a></h4>
                 <ul>
-                  <li><i class="bi bi-check2"></i> <span class="span-list">Ortomosaicos RGB y Multiespectrales.</span></li>
+                  <li><i class="bi bi-check2"></i> <span class="span-list" data-section="services" data-value="fotogrametria1">Ortomosaicos RGB y Multiespectrales.</span></li>
                 </ul>
               </div>
             </div>
@@ -117,11 +130,11 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-vector-pen icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Vectorización</a></h4>
+                <h4 class="title"><a href="#" class="stretched-link" data-section="services" data-value="vectorizacionTitulo">Vectorización</a></h4>
                 <ul>
-                    <li><i class="bi bi-check2"></i> <span class="span-list">Carreteras y Autopistas.</span></li><br>
-                    <li><i class="bi bi-check2"></i> <span class="span-list">Catastro de ciudades.</span></li><br>
-                    <li><i class="bi bi-check2"></i> <span class="span-list">Vectorización del alcantarillado, luminaria, etc.</span></li><br><br>
+                    <li><i class="bi bi-check2"></i> <span class="span-list" data-section="services" data-value="vectorizacion1">Carreteras y Autopistas.</span></li><br>
+                    <li><i class="bi bi-check2"></i> <span class="span-list" data-section="services" data-value="vectorizacion2">Catastro de ciudades.</span></li><br>
+                    <li><i class="bi bi-check2"></i> <span class="span-list" data-section="services" data-value="vectorizacion3">Vectorización del alcantarillado, luminaria, etc.</span></li><br><br>
                     
                   </ul>
               </div>
@@ -133,7 +146,7 @@
               <i class="bi bi-geo icon flex-shrink-0"></i>
               <i class="bi bi-water icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Geología/Hidrología</a></h4>
+                <h4 class="title"><a href="#" class="stretched-link" data-section="services" data-value="geologiaTitulo">Geología/Hidrología</a></h4>
                 <ul>
                     <li><i class="bi bi-check2"></i> <span class="span-list">Modelos de ondulación geoidal locales (geoides).</span></li><br>
                     <li><i class="bi bi-check2"></i> <span class="span-list">Estudios y simulaciones hidrológicos e hidráulicos.</span></li><br>                    
@@ -151,8 +164,8 @@
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Geología/Hidrología</a></h4>
                 <ul class="service-features">
-                  <li><i class="bi bi-check2"></i> <span>Modelos de ondulación geoidal locales (geoides).</span></li>
-                  <li><i class="bi bi-check2"></i> <span>Estudios y simulaciones hidrológicos e hidráulicos.</span></li>
+                  <li><i class="bi bi-check2"></i> <span data-section="services" data-value="geologia1">Modelos de ondulación geoidal locales (geoides).</span></li>
+                  <li><i class="bi bi-check2"></i> <span data-section="services" data-value="geologia2">Estudios y simulaciones hidrológicos e hidráulicos.</span></li>
                 </ul>
               </div>
           </div>
@@ -171,15 +184,15 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Nuestro</h2>
-        <p>Flujo de Trabajo<br></p>
+        <h2 data-section="services" data-value="flujoH2">Nuestro</h2>
+        <p data-section="services" data-value="flujoP">Flujo de Trabajo<br></p>
       </div><!-- End Section Title -->
 
       <div class="tab-content team-member p-team">              
 
           <div class="tab-pane fade show active">
 
-            <p class="p-services">En JASFLY sabemos que el éxito de un relevamiento geoespacial no solo depende de la tecnología, sino también de una metodología estructurada y rigurosa. Desde la etapa inicial de definición hasta la entrega del informe final, cada fase está diseñada para garantizar precisión, calidad y cumplimiento de los objetivos. Nuestro flujo de trabajo combina planificación detallada, control de calidad y profesionalismo, asegurando que los resultados satisfagan los requerimientos del proyecto.</p>
+            <p class="p-services" data-section="services" data-value="flujoIntro">En JASFLY sabemos que el éxito de un relevamiento geoespacial no solo depende de la tecnología, sino también de una metodología estructurada y rigurosa. Desde la etapa inicial de definición hasta la entrega del informe final, cada fase está diseñada para garantizar precisión, calidad y cumplimiento de los objetivos. Nuestro flujo de trabajo combina planificación detallada, control de calidad y profesionalismo, asegurando que los resultados satisfagan los requerimientos del proyecto.</p>
 
           </div><!-- End Tab 1 Content -->             
 
@@ -193,19 +206,19 @@
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#features-tab-1">1. Inicio y Definición</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#features-tab-1" data-section="services" data-value="tab1Nav">1. Inicio y Definición</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-2">2. Planificación</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-2" data-section="services" data-value="tab2Nav">2. Planificación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3">3. Ejecución de Campo</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3" data-section="services" data-value="tab3Nav">3. Ejecución de Campo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-4">4. Procesamiento y Control de Calidad</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-4" data-section="services" data-value="tab4Nav">4. Procesamiento y Control de Calidad</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-5">5. Entrega y Cierre</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-5" data-section="services" data-value="tab5Nav">5. Entrega y Cierre</a>
               </li>
             </ul>
           </div>
@@ -214,10 +227,10 @@
               <div class="tab-pane active show" id="features-tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Inicio y Definición</h3>
+                    <h3 data-section="services" data-value="tab1Titulo">Inicio y Definición</h3>
                       <ul class="service-features">
-                        <li><i class="bi bi-check2"></i> <span>Reunión inicial (kickoff) con el cliente para validar alcance, precisiones esperadas, criterios de aceptación y cronograma. </span></li>
-                        <li><i class="bi bi-check2"></i> <span>Establecimiento del plan de comunicación y registro de riesgos.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab1Item1">Reunión inicial (kickoff) con el cliente para validar alcance, precisiones esperadas, criterios de aceptación y cronograma.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab1Item2">Establecimiento del plan de comunicación y registro de riesgos.</span></li>
                       </ul>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -228,9 +241,9 @@
               <div class="tab-pane" id="features-tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Planificación</h3>
+                    <h3 data-section="services" data-value="tab2Titulo">Planificación</h3>
                       <ul class="service-features">
-                          <li><i class="bi bi-check2"></i> <span>Diseño del plan de vuelo LiDAR y/o fotogramétrico • Plan de levantamiento de la red de apoyo GNSS diferencial (equipos, técnica, tiempos de observación).</span></li>
+                          <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab2Item1">Diseño del plan de vuelo LiDAR y/o fotogramétrico • Plan de levantamiento de la red de apoyo GNSS diferencial (equipos, técnica, tiempos de observación).</span></li>
                           
                       </ul>
                   </div>
@@ -242,10 +255,10 @@
               <div class="tab-pane" id="features-tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Ejecución de Campo</h3>
+                    <h3 data-section="services" data-value="tab3Titulo">Ejecución de Campo</h3>
                       <ul class="service-features">
-                        <li><i class="bi bi-check2"></i> <span>Despliegue de equipos y medición de la red GNSS. • Vuelos LiDAR y captura simultánea de imágenes RGB.</span></li>
-                        <li><i class="bi bi-check2"></i> <span>Validación en campo de cobertura y calidad preliminar de datos.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab3Item1">Despliegue de equipos y medición de la red GNSS. • Vuelos LiDAR y captura simultánea de imágenes RGB.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab3Item2">Validación en campo de cobertura y calidad preliminar de datos.</span></li>
                       </ul>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -256,13 +269,13 @@
               <div class="tab-pane" id="features-tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Procesamiento y Control de Calidad</h3>
+                    <h3 data-section="services" data-value="tab4Titulo">Procesamiento y Control de Calidad</h3>
                       <ul class="service-features">
-                        <li><i class="bi bi-check2"></i> <span>Procesamiento GNSS en gabinete: ajuste y validación de precisión de la red.</span></li>
-                        <li><i class="bi bi-check2"></i> <span> Procesamiento LiDAR: generación de nubes de puntos, clasificación semiautomática y/o Inteligencia Artificial y control manual de no conformidades.</span></li>
-                        <li><i class="bi bi-check2"></i> <span>Ortomosaico: ajuste radiométrico y control de uniformidad.</span></li>
-                        <li><i class="bi bi-check2"></i> <span>MDE/MDT: generación de tiles con informes de calidad absoluta y relativa.</span></li>
-                        <li><i class="bi bi-check2"></i> <span>Vectorización.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab4Item1">Procesamiento GNSS en gabinete: ajuste y validación de precisión de la red.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab4Item2">Procesamiento LiDAR: generación de nubes de puntos, clasificación semiautomática y/o Inteligencia Artificial y control manual de no conformidades.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab4Item3">Ortomosaico: ajuste radiométrico y control de uniformidad.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab4Item4">MDE/MDT: generación de tiles con informes de calidad absoluta y relativa.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab4Item5">Vectorización.</span></li>
                       </ul>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -273,10 +286,10 @@
               <div class="tab-pane" id="features-tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Entrega y Cierre</h3>
+                    <h3 data-section="services" data-value="tab5Titulo">Entrega y Cierre</h3>
                       <ul class="service-features">
-                        <li><i class="bi bi-check2"></i> <span>Descripción detallada de métodos, resultados de QC, metadatos y lecciones aprendidas.</span></li>
-                        <li><i class="bi bi-check2"></i> <span>Entrega de todos los productos en discos externos y copia de respaldo.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab5Item1">Descripción detallada de métodos, resultados de QC, metadatos y lecciones aprendidas.</span></li>
+                        <li><i class="bi bi-check2"></i> <span data-section="services" data-value="tab5Item2">Entrega de todos los productos en discos externos y copia de respaldo.</span></li>
                       </ul>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -304,8 +317,8 @@
         <img src="assets/img/logo.png" alt="logotipo" class="logo-image2">
       </a>
           <!-- <div class="footer-contact pt-3">
-            <p><strong>Base de Operaciones: </strong>Av. 44 No. 2277, La Plata - Buenos Aires, Argentina</p>
-            <p><strong>Centro de Procesamiento: </strong>Humberto Primo Nº 670, Oficina F63, Bloque Fragueiro, Complejo Capitalinas, Córdoba Capital, Argentina </p>
+            <p><strong data-section="footer" data-value="baseOperaciones">Base de Operaciones:</strong> Av. 44 No. 2277, La Plata - Buenos Aires, Argentina</p>
+            <p><strong data-section="footer" data-value="centroProcesamiento">Centro de Procesamiento:</strong> Humberto Primo Nº 670, Oficina F63, Bloque Fragueiro, Complejo Capitalinas, Córdoba Capital, Argentina </p>
             
             <p class="mt-3"><strong>Whatsapp:</strong> <span><a href="https://walink.co/688c26" target="_blank">+54 9 351 3734330</a></span></p>
             <p><strong>Email:</strong> <span><a href="mailto:info@jasflysa.com?subject=Consulta%20sobre%20servicios" target="_blank">info@jasflysa.com</a></span></p>
@@ -313,35 +326,35 @@
           <div class="social-links d-flex mt-4">
             <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a> -->
-            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/jasflyoficial/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Links Útiles</h4>
+          <h4 data-section="footer" data-value="linksUtiles">Links Útiles</h4>
           <ul>
-              <li><a href="index.html" class="active">Inicio</a></li>
-              <li><a href="about.html"><span>Nosotros</span></a></li>
-              <li><a href="services.html"><span>Qué Hacemos</span></a></li>         
-              <li><a href="projects.html">Proyectos</a></li>          
-              <li><a href="contact.html">Contacto</a></li>   
+              <li><a href="index.html" class="active" data-section="nav" data-value="inicio">Inicio</a></li>
+              <li><a href="about.html"><span data-section="nav" data-value="nosotros">Nosotros</span></a></li>
+              <li><a href="services.html"><span data-section="nav" data-value="queHacemos">Qué Hacemos</span></a></li>         
+              <li><a href="projects.html" data-section="nav" data-value="proyectos">Proyectos</a></li>          
+              <li><a href="contact.html" data-section="nav" data-value="contacto">Contacto</a></li>   
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-contact">
-          <h4>Contactanos</h4>
+          <h4 data-section="footer" data-value="contactanos">Contactanos</h4>
           <p><strong>Base de Operaciones: </strong>Av. 44 No. 2277, La Plata - Buenos Aires, Argentina</p>
           <p><strong>Centro de Procesamiento: </strong>Tycho Brahe 4850, B° Villa Belgrado, CP: X5021, Córdoba, Argentina</p>
           <p class="mt-3"><strong>Whatsapp:</strong> <span><a href="https://walink.co/688c26" target="_blank">+54 9 351 3734330</a></span></p>
-          <p><strong>Email:</strong> <span><a href="mailto:jose.canas@jasflysa.com?subject=Consulta%20sobre%20servicios" target="_blank">jose.canas@jasflysa.com</a></span></p>
+          <p><strong>Email:</strong> <span><a href="/cdn-cgi/l/email-protection#93f9fce0f6bdf0f2fdf2e0d3f9f2e0f5ffeae0f2bdf0fcfeace0e6f1f9f6f0e7aed0fcfde0e6ffe7f2b6a1a3e0fcf1e1f6b6a1a3e0f6e1e5faf0fafce0" target="_blank"><span class="__cf_email__" data-cfemail="b0dadfc3d59ed3d1ded1c3f0dad1c3d6dcc9c3d19ed3dfdd">[email&#160;protected]</span></a></span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4 credits">
-      <p>by<strong class="px-1 sitename">JAS<span class="footer-brand">FLY</span></strong><span>Developed by</span><strong class="developed-credit"><a href="https://lucasconti.netlify.app/" target="_blank"> Lucas Conti</a></strong></p>
+      <p>by<strong class="px-1 sitename">JAS<span class="footer-brand">FLY</span></strong><span data-section="footer" data-value="desarrolladoPor">Developed by</span><strong class="developed-credit"><a href="https://lucasconti.netlify.app/" target="_blank"> Lucas Conti</a></strong></p>
    
     </div>
 
@@ -354,7 +367,7 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -364,9 +377,14 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
-</body>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/languages.js"></script>
+
+  </body>
 
 </html>
