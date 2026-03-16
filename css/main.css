@@ -3600,9 +3600,10 @@ color: inherit;
 /* Mobile */
 @media (max-width: 768px) {
   .flags {
-    justify-content: center;   /* centradas horizontalmente */
-    margin-left: 0;            /* quitar margen lateral */
-    margin-top: 15px;          /* espacio arriba */
+    justify-content: right !important;   /* centradas horizontalmente */
+    margin-right: 0 !important;            /* quitar margen lateral */
+    margin-top: 0 !important;          /* espacio arriba */
+    /* margin-bottom: 35px !important;       */
   }
 
   #btn-info {
@@ -3620,8 +3621,38 @@ color: inherit;
 }
 
 
-/* PRUEBA NAV */
+/* Ajustes para móviles */
+@media (max-width: 600px) {
+  .breadcrumbs {
+    font-size: 13px;       /* texto más chico */
+    margin: 10px 0;        /* aire arriba y abajo */
+    text-align: center;    /* centrado en pantalla */
+  }
 
-/* #text-nav{
-  font-size: 30px;
-} */
+  .breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;       /* si no entra, se corta en dos líneas limpias */
+    justify-content: right;
+    gap: 10px;             /* espacio uniforme entre Inicio y Qué Hacemos */
+  }
+
+  .breadcrumbs li {
+    white-space: nowrap;   /* evita que se parta cada palabra */
+  }
+
+
+  /* separador más liviano que la barra */
+  .breadcrumbs li::after {
+    /* content: "›";           */
+    margin-left: 10px;
+    color: #888;
+  }
+
+  /* sin separador al final */
+  /* .breadcrumbs li:last-child::after {
+    content: "";           
+  } */
+
+}
