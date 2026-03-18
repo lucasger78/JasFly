@@ -148,4 +148,27 @@
  
 }
 
+@media (max-width: 768px) {
+  /* Contenedor de la galería en mobile */
+  .gallery {
+    display: flex;
+    flex-direction: column;   /* apila los items */
+    align-items: center;      /* centra cada item */
+  }
+
+  /* Cada item ocupa todo el ancho disponible */
+  .gallery-item {
+    width: 100% !important;
+    max-width: 100% !important;          /* asegura que no se achique */
+    margin-bottom: 15px !important;      /* espacio entre proyectos */
+  }
+
+  /* Las imágenes se adaptan al ancho */
+  .gallery-item img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+}
+
    

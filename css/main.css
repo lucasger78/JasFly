@@ -965,6 +965,53 @@ section,
   font-family: var(--heading-font);
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    margin-left: 5px !important;
+  }
+  .logo-image{
+    width: 80px;
+  }
+  .btn-getstarted{
+    display: block;
+    margin: 0 auto;           /* centra horizontalmente */
+    margin-top: 5px;          /* pequeño aire respecto a las banderas */
+    text-align: center;
+
+  }
+}
+
+@media (max-width: 768px) {
+  /* Logo más chico */
+  .logo-image {
+    max-height: 40px;   /* ajusta según lo que necesites */
+    width: auto;
+  }
+
+  /* Banderas centradas */
+  #flags {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  /* Botón FAQs debajo de las banderas y centrado */
+  .btn-getstarted {
+    display: block;
+    margin: 0 auto;      /* centra horizontalmente */
+    margin-top: 5px;     /* aire respecto a las banderas */
+    text-align: center;
+  }
+
+  /* Título "NUESTROS SERVICIOS" alineado a la derecha */
+  h2, .section-title, .services-title {
+    text-align: right;
+    margin-right: 5px;   /* pegado al margen derecho con poco espacio */
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -3655,4 +3702,25 @@ color: inherit;
     content: "";           
   } */
 
+}
+
+@media (max-width: 600px) {
+  .header-top {              /* contenedor de banderas + toggle */
+    display: flex;
+    justify-content: flex-end; /* empuja todo a la derecha */
+    align-items: center;
+    gap: 12px;                /* espacio entre bandera y toggle */
+    padding: 8px;
+  }
+
+  .header-top .flags {
+    display: flex;
+    gap: 6px;                 /* espacio entre las banderas */
+  }
+
+  .menu-toggle {
+    order: 2;                 /* asegura que quede después de las banderas */
+    font-size: 20px;          /* tamaño del ícono */
+    cursor: pointer;
+  }
 }
