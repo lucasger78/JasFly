@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/slide-projects.css" rel="stylesheet">
 
  
 </head>
@@ -39,6 +40,8 @@
 
         <img src="assets/img/logo.png" alt="logotipo" class="logo-image">
       </a>
+
+      <p class="logo d-flex align-items-center me-auto text-brand">Division Geomatica</p>
 
      <nav id="navmenu" class="navmenu">
         <ul>
@@ -71,10 +74,10 @@
 
     <!-- Page Title -->
     <div class="page-title light-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
+      <div class="container d-lg-flex justify-content-between align-items-center" >
         <!-- <h2 class="mb-2 mb-lg-0">Quiénes somos </h2> -->
 
-        <div class="container section-title title-about" data-aos="fade-up">
+        <div class="container section-title title-about" data-aos="fade-up" style="margin-left: 10%;">
         <h2 data-section="about" data-value="paginaTituloH2">Quienes</h2>
         <p data-section="about" data-value="paginaTituloP">Somos<br></p>
       </div>
@@ -93,23 +96,62 @@
     <!-- About 2 Section -->
     <section id="about-2" class="about-2 section">
 
-      <div class="container" data-aos="fade-up">
+      <!-- <div class="container" data-aos="fade-up">
 
-        <!-- <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200"> -->
-
+       
           <div class="col-lg-5">
             <div class="about-img">
-              <img src="assets/img/about-portrait2.jpg" class="img-fluid img-empresa" alt="" style="border-radius: 5px;">
+              <img src="assets/img/projects-carrusel/01.jpg" class="img-fluid img-empresa" alt="" style="border-radius: 5px;">
+            </div>
+            <div class="about-img">
+              <img src="assets/img/projects-carrusel/02.jpg" class="img-fluid img-empresa" alt="" style="border-radius: 5px;">
+            </div>
+            <div class="about-img">
+              <img src="assets/img/projects-carrusel/03.jpg" class="img-fluid img-empresa" alt="" style="border-radius: 5px;">
+            </div>
+            <div class="about-img">
+              <img src="assets/img/projects-carrusel/04.jpg" class="img-fluid img-empresa" alt="" style="border-radius: 5px;">
             </div>
           </div>
-          </div>
+          </div> -->
 
+      <!-- <div class="container" data-aos="fade-up"> -->
+       <!-- Carrusel fuera del container -->
+      <div id="projects-carousel" class="carousel slide carousel-fade about-img" data-bs-ride="carousel" data-bs-interval="3000">
+        
+      
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/projects-carrusel/01.jpg" class="d-block w-100" alt="Project 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-carrusel/02.jpg" class="d-block w-100" alt="Project 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-carrusel/03.jpg" class="d-block w-100" alt="Project 3">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-carrusel/04.jpg" class="d-block w-100" alt="Project 4">
+          </div>
         </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#projects-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projects-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+      <!-- </div> -->
         
 
-       <div class="tab-content team-member p-team">              
+       <div class="tab-content team-member p-team" style="margin-left: 10%;">              
 
-        <div class="tab-pane fade show active">
+        <div class="tab-pane fade show active" >
           <h3 class="title-about" data-section="about" data-value="empresaTitulo">JASFLY Servicios Aéreos</h3>
 
               <div class="tab-pane fade show active" id="about-2-tab1">
@@ -160,12 +202,12 @@
    
     <!-- Team Section -->
     <section id="team" class="team section">
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title" data-aos="fade-up" style="margin-left: 10%;">
         <h2 data-section="about" data-value="equipoH2">Nuestro</h2>
         <p data-section="about" data-value="equipoP">Equipo<br></p>
       </div>
 
-      <div class="container">
+      <div class="container" style="margin-left: 10%;">
        
 
         <div class="row gy-4">
@@ -178,12 +220,12 @@
                 <span><span data-section="team" data-value="m1Cargo">CEO</span><br>
                 <span data-section="team" data-value="residencia">Residencia:</span> La Plata, Bs. As.</span>
                 <p data-section="team" data-value="m1Bio">Dueño y director de Ecodyma S.A. y JASFLY S.A., con amplia experiencia en aviación y gestión empresarial con un enfoque en servicios aéreos y desarrollo de proyectos de infraestructura. Alta capacidad de liderazgo, toma de decisiones y dirección de operaciones en sectores clave. Piloto de helicóptero, habilitación para vuelos nocturnos; combate c/incendios; vuelo por instrumento B407, B206, B412 y R22.</p><br>
-                <div class="social social-links">
+                <!-- <div class="social social-links">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -196,12 +238,12 @@
                 <span><span data-section="team" data-value="m2Cargo">Consultor Técnico en Teledetección</span><br>
                 <span data-section="team" data-value="residencia">Residencia:</span> Ciudad de Córdoba, Córdoba</span>
                 <p data-section="team" data-value="m2Bio">Ingeniero aeronáutico con más de cinco años de experiencia en geomática, especializado en la planificación y ejecución de proyectos aéreos de fotogrametría y LiDAR. Ha trabajado con diversas plataformas aviones, helicópteros y drones y sensores avanzados, incluyendo cámaras RGB de ultra alta resolución, multiespectrales y sistemas LiDAR. Enfocado en la planificación estratégica de proyectos con sensores aerotransportados y en el procesamiento de datos geoespaciales.</p>
-                <div class="social social-links">
+                <!-- <div class="social social-links">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -214,12 +256,12 @@
                 <span><span data-section="team" data-value="m3Cargo">Piloto Especialista LiDAR/Fotogrametría</span><br>
                 <span data-section="team" data-value="residencia">Residencia:</span> La Plata, Bs. As.</span>
                 <p data-section="team" data-value="m3Bio">Piloto Comercial de Helicóptero. Instructor de Vuelo de Helicóptero. Piloto Privado de Avión. Licencia: 75.344. Técnico Superior en Seguridad y Operaciones Aéreas. Diplomado en Seguridad de Transporte Aéreo.</p><br><br><br>
-                <div class="social social-links">
+                <!-- <div class="social social-links">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -232,12 +274,12 @@
                 <span><span data-section="team" data-value="m4Cargo">Especialista GNSS</span><br>
                 <span data-section="team" data-value="residencia">Residencia:</span> La Plata, Bs. As.</span>
                 <p data-section="team" data-value="m4Bio">Especialista en topografía y geodesia con más de 20 años de experiencia en obras civiles y proyectos de relevamiento geoespacial. A lo largo de su trayectoria ha desarrollado una sólida competencia en la medición y establecimiento de redes geodésicas, control de obras y levantamientos topográficos de alta precisión, tanto con estaciones totales como mediante sistemas GNSS.</p>
-                <div class="social social-links">
+                <!-- <div class="social social-links">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -286,11 +328,11 @@
 
       </div>
 
-       <div class="tab-content team-member p-team">              
+       <div class="tab-content team-member p-team" style="margin-left: 10%;">              
 
           <div class="tab-pane fade show active">
 
-            <p class="about-items" data-section="about" data-value="equipoCierre">Este equipo de trabajo y enfoque alineado en cinco fases típicas de gestión de proyectos (inicio, planificación, ejecución, control y cierre) aseguran que cada proyecto de JASFLY se ejecute con rigurosidad, transparencia y calidad.</p>
+            <p class="about-items" data-section="about" data-value="equipoCierre">El equipo de trabajo está enfocado y alineado en cinco fases típicas de gestión de proyectos (inicio, planificación, ejecución, control y cierre) y asegura que cada proyecto de JASFLY se ejecute con rigurosidad, transparencia y calidad.</p>
 
           </div><!-- End Tab 1 Content -->             
 

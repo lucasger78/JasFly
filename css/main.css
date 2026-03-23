@@ -901,8 +901,10 @@ li{
 
 
 #minimenu{
-  margin-top: -90px !important;
+  margin-top: -30px !important;
   margin-bottom: 10px !important;
+  margin-right: 10px !important;
+  width: 250px !important;
 }
 
 /*--------------------------------------------------------------
@@ -1055,7 +1057,7 @@ section,
 
 .hero .carousel-item:before {
   content: "";
-  background: color-mix(in srgb, #e6e7ee, transparent 80%);
+  /* background: color-mix(in srgb, #e6e7ee, transparent 80%); */
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1252,6 +1254,16 @@ section,
 .about-items{
   margin-bottom: 50px; 
   color: #31344b;
+}
+
+.linea {
+  border: none;
+  border-top: 2px solid #31344b; 
+  margin: 5px 0;
+}
+
+.p-index{
+  padding-bottom: 10px !important;
 }
 
 .ul-faqs{  
@@ -1472,7 +1484,7 @@ section,
 
 .about-2 .about-img {
   position: relative;
-  margin: 0 0 0 60px;
+  /* margin: 0 0 0 60px; */
 }
 
 
@@ -1513,25 +1525,58 @@ section,
 }
 
 
-.about-img {
-  /* position: absolute; */
+/* .about-img { 
   margin-top: -10px !important;
-  width: 60vw;
-  height: 70vh;
-  overflow: hidden;
-  padding: 10px !important;
-  left: 20%;
-  
+  width: 100%;      
+  height: auto;
+  overflow: hidden;  
 }
 
 .about-img img {
-  width: 55vw; /* el doble del ancho de la pantalla */
+ width: 100%;         
+  height: auto;        
+  display: block;      
+  object-fit: cover;
+} */
+
+.about-img { 
+  margin-top: -10px !important;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -26vw;  
+  margin-right: -50vw; 
   height: auto;
-  /* position: absolute; */
-  margin-left: 50% !important;
-  transform: translateX(-50%);
-  /* object-fit: cover; */
+  overflow: hidden;  
 }
+
+.about-img img {
+  width: 100%;         
+  height: auto;        
+  display: block;      
+  object-fit: cover;
+}
+
+
+
+@media (max-width: 768px) {
+  .about-img {
+    width: 100vw;
+    position: relative;
+    left: 0 !important;
+    margin-left: -10px !important;  /* Ajusta según el padding de tu container mobile */
+    margin-right: 1px !important; /* Ajusta según el padding de tu container mobile */
+  }
+  
+  .about-img img {
+    width: 100%;         
+    height: auto;        
+    display: block;      
+    object-fit: cover;
+  }
+}
+
 
 
 @media (max-width: 575px) {
@@ -1543,6 +1588,8 @@ section,
     inset: -30px 0 0 -30px;
   }
 }
+
+
 
 .about-2 h3 {
   font-weight: 300;
@@ -1599,6 +1646,76 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+
+@media (max-width: 768px) {
+
+  .header .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;   /* ayuda a empujar cosas a los extremos */
+    padding: 10px 15px;
+    position: relative;               /* necesario para el centrado absoluto */
+    gap: 8px;                         /* pequeño espacio entre elementos */
+  }
+
+  /* Logo + hamburguesa a la izquierda */
+  .logo {
+    order: 1;
+    margin-left: 5px;   /* espacio aproximado para que no choque con hamburguesa */
+  }
+
+  .logo-image {
+    max-height: 25px;
+  }
+
+  /* Título DIVISION GEOMATICA → centrado absoluto */
+  .text-brand {
+    order: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-align: center;
+    font-size: 1.1rem;          /* opcional: ajustar tamaño si queda muy grande */
+    white-space: nowrap;
+  }
+
+  /* Botón FAQs → misma línea que el título, a la derecha */
+  .btn-getstarted {
+    order: 3;
+    margin-left: auto;                /* empuja todo lo posible a la derecha */
+    margin-right: 8px;                /* pequeño margen del borde derecho */
+    padding: 6px 14px;                /* opcional: achicar un poco el botón */
+    font-size: 0.9rem;                /* opcional */
+    white-space: nowrap;
+  }
+
+  /* Banderas → nueva línea, alineadas a la derecha */
+  #flags {
+    order: 4;
+    width: 100%;                      /* ocupa todo el ancho disponible */
+    display: flex;
+    justify-content: flex-end;        /* banderas pegadas a la derecha */
+    margin-top: -20px !important;                  /* separación de la fila superior */
+    padding-right: 5px !important;              /* margen derecho */
+  }
+
+  /* Opcional: si querés las banderas centradas en lugar de a la derecha */
+  /*
+  #flags {
+    justify-content: center;
+    padding-right: 0;
+  }
+  */
+
+  /* Ajustes adicionales útiles */
+  .navbar-toggler {
+    margin-left: -38px;   /* acerca el botón hamburguesa al borde izquierdo */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -2805,6 +2922,9 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+.whatsapp-contact{
+ margin-left: 100px;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
@@ -2984,6 +3104,13 @@ section,
   font-size: 14px;
 }
 
+.text-brand{
+  display: flex;
+  align-items: center; /* centra el texto dentro del bloque */
+  text-align: center;
+  margin-top: 20px !important;
+}
+
 @media screen and (max-width: 768px) {
   .title-hero{
     text-align: center;
@@ -2995,6 +3122,7 @@ section,
   }
 
 
+  }
   
   .p-hero{
     text-align: center;
@@ -3009,7 +3137,6 @@ section,
     text-align: center;
   }
   
-}
 
 
 /* Estilos para el contenedor de iconos */
@@ -3602,7 +3729,7 @@ color: inherit;
 } */
 
 
-.flags-ar,
+/* .flags-ar,
 .flags-br,
 .flags-gb {	
   filter: grayscale(100%);
@@ -3641,6 +3768,29 @@ color: inherit;
 	
 	cursor: pointer;
 	
+} */
+
+
+/* Quitamos TODOS los filter del CSS base y :hover */
+.flags-ar,
+.flags-br,
+.flags-gb {
+  /* filter: grayscale(100%);   ← eliminar o comentar */
+  transition: filter 0.3s ease;
+}
+
+ /* .flags-ar:hover,
+.flags-br:hover,
+.flags-gb:hover,
+.flags-ar.hovered,
+.flags-br.hovered,
+.flags-gb.hovered {
+ filter: grayscale(0%);   
+} */
+
+/* Solo usamos esta para la activa */
+.flags_items.active img {
+  filter: grayscale(0%) !important;   /* opcional el !important */
 }
 
 
