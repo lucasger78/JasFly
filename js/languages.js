@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Estado inicial
+  // Estado  inicial
   updateFlagsVisualState();         // ← importante: usamos la función dedicada
   changeLanguage(currentLanguage);  // ← carga textos (puedes mantenerlo o quitarlo si ya cargas es.json por defecto)
 });

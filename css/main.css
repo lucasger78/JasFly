@@ -205,6 +205,7 @@ li{
   margin: 0 4px !important; 
   min-width: auto !important;
   width: auto !important;
+  height: auto !important;
 }
 
 /* Estilos para los enlaces dentro de los items */
@@ -341,7 +342,7 @@ li{
 @media (min-width: 1200px) {
   .logo-image{
     width: 150px;
-    height: auto;
+    height: auto !important;
     max-height: 36px;
     margin-right: 8px;
     /* border: #d6d6d6 1px solid; */
@@ -1867,7 +1868,11 @@ section,
 
 .team .team-member .pic {
   overflow: hidden;
-  width: 150px;
+  /* width: 150px; */
+  width: 100%;   /* ocupa todo el ancho disponible */
+  height: auto;  /* mantiene proporción */
+  max-width: 200px; /* límite superior si quieres */
+
   border-radius: 5px;
   flex-shrink: 0;
 }
@@ -3873,4 +3878,8 @@ color: inherit;
     font-size: 20px;          /* tamaño del ícono */
     cursor: pointer;
   }
+}
+
+p {
+  margin-bottom: 0.5rem !important;
 }

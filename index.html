@@ -38,13 +38,13 @@
         <img src="assets/img/logo.png" alt="logotipo" class="logo-image">
       </a>
 
-      <p class="logo d-flex align-items-center me-auto text-brand">Division Geomatica</p>
+      <!-- <p class="logo d-flex align-items-center me-auto text-brand">Division Geomatica</p> -->
 
       <nav class="navmenu">
         <ul>
           <li><a href="index.html" class="active" data-section="nav" data-value="inicio" data-section="nav" data-value="inicio">Inicio</a></li>
           <li><a href="about.html"><span data-section="nav" data-value="nosotros">Nosotros</span></a></li>
-          <li><a href="services.html"><span data-section="nav" data-value="queHacemos">Qué Hacemos</span></a></li>
+          <li><a href="services.html"><span data-section="nav" data-value="queHacemos">Servicios</span></a></li>
           <li><a href="projects.html" data-section="nav" data-value="proyectos" data-section="nav" data-value="proyectos">Proyectos</a></li>
           <li><a href="contact.html" data-section="nav" data-value="contacto" data-section="nav" data-value="contacto">Contacto</a></li>
         </ul>
@@ -79,6 +79,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators"></div>
         <div class="carousel-item active">
           <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
         </div>
@@ -87,20 +88,17 @@
         </div>
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-        </div>
-        <!-- carousel-container DENTRO del hero-carousel (fix) -->
-        <!-- <div class="carousel-container">
-          <h3 class="p-hero" data-section="index" data-value="heroSubtitulo">División Geomática</h3>
-          <a href="#about" class="bi-chevron-down arrow-down-index"></a>
-        </div> -->
+        </div>        
       </div>
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- /Hero Section -->
+
 
     <!-- About Section -->
     <section id="about" class="about section" style="background-color: whitesmoke;">
       <div class="container section-title" data-aos="fade-up" style="margin-left: 10%;">
-        <h2 data-section="index" data-value="sobreH2">Sobre</h2>
-        <p data-section="index" data-value="sobreP">Nosotros<br></p>
+        <h2 data-section="index" data-value="sobreH2">Quiénes</h2>
+        <p data-section="index" data-value="sobreP">Somos<br></p>
       </div>
 
       <div class="tab-content team-member p-team" id="text-home" style="margin-left: 10%; margin-right: auto;">
@@ -118,9 +116,13 @@
             Creemos que la digitalización basada en información georreferenciada de alta precisión es el fundamento para comprender, diseñar y resolver los desafíos de nuestra realidad.
           </p>
 
-          <hr class="linea"><br>
-
-          <h5 data-section="index" data-value="aboutParrafo5a" style="font-weight: bolder;">Lidar</h5>
+          <!-- <hr class="linea"><br> -->    
+        </div>
+      </div>
+      <div class="tab-content team-member p-team" id="text-home" style="margin-left: 10%; margin-right: auto;">
+        <div class="tab-pane fade show active">
+          <p class="about-items p-index">
+            <h5 data-section="index" data-value="aboutParrafo5a" style="font-weight: bolder;">Lidar</h5>
 
           <p class="about-items p-index" data-section="index" data-value="aboutParrafo5">
             JASFLY lleva más de tres años ofreciendo servicios de relevamiento con tecnología LiDAR a distintos sectores e industrias. Continuamente optimizamos los tiempos de entrega mediante automatización avanzada y técnicas de procesamiento de vanguardia.
@@ -131,8 +133,7 @@
           <p class="about-items p-index" data-section="index" data-value="aboutParrafo7">
             Ya sea planificando infraestructura, gestionando recursos naturales o respondiendo a emergencias, la tecnología LiDAR aporta la precisión y la eficiencia necesarias para actuar con seguridad y confianza.
           </p>
-
-
+          <!-- <hr class="linea"><br> -->    
         </div>
       </div>
     </section><!-- /About Section -->
