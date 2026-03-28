@@ -1031,6 +1031,9 @@ section,
   position: relative;
 }
 
+
+
+
 @media (max-width: 1200px) {
   .hero .carousel {
     min-height: calc(100vh - 66px);
@@ -1128,7 +1131,7 @@ section,
 }
 
 
-.hero .carousel-control-prev,
+/* .hero .carousel-control-prev,
 .hero .carousel-control-next {
   width: 10%;
   transition: 0.3s;
@@ -1143,29 +1146,29 @@ section,
 .hero .carousel-control-prev:hover,
 .hero .carousel-control-next:hover {
   opacity: 0.9;
-}
+} */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
 
   .hero .carousel-control-prev,
   .hero .carousel-control-next {
     width: 5%;
   }
-}
+} */
 
-.hero .carousel-control-next-icon,
+/* .hero .carousel-control-next-icon,
 .hero .carousel-control-prev-icon {
   font-size: 32px;
   line-height: 1;
-}
+} */
 
-.hero .carousel-indicators {
-  list-style: none;
-}
+/* .hero .carousel-indicators {
+  list-style: none;  
+} */
 
-.hero .carousel-indicators li {
+/* .hero .carousel-indicators li {
   cursor: pointer;
-}
+} */
 
 @keyframes fadeInUp {
   from {
@@ -3882,4 +3885,8 @@ color: inherit;
 
 p {
   margin-bottom: 0.5rem !important;
+}
+
+.section-title{
+  margin-bottom: -70px !important;
 }

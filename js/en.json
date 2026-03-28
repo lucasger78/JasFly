@@ -116,7 +116,7 @@
     "paginaTituloP": "Asked Questions",
     "breadcrumbCurrent": "FAQs",
     "q1Titulo": "What is geomatics?",
-    "q1Parrafo1": "Geomatics is a discipline that integrates the acquisition, storage, processing, analysis, and visualization of geospatial data, i.e., information that references a location on Earth. In essence, it combines Earth sciences with information and communication technologies (ICT).",
+    "q1Parrafo1": "Geomatics is a discipline that integrates the acquisition, processing, analysis, visualization and storage of geospatial data, i.e., information that references a location on Earth. In essence, it combines Earth sciences with information and communication technologies (ICT).",
     "q1Parrafo2": "This discipline groups a set of technologies and sciences that allow the capture, analysis, and interpretation of territorial information. Its main objective is geographic knowledge for better decision-making across a wide variety of fields.",
     "q1Parrafo3": "Disciplines integrated in Geomatics:",
     "q1SIG": "Geographic Information Systems (GIS):",
