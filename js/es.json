@@ -2,7 +2,7 @@
   "nav": {
     "inicio": "Inicio",
     "nosotros": "Nosotros",
-    "queHacemos": "Qué Hacemos",
+    "queHacemos": "Servicios",
     "proyectos": "Proyectos",
     "contacto": "Contacto",
     "faqs": "FAQs"
@@ -36,7 +36,7 @@
     "paginaTituloH2": "Quienes",
     "paginaTituloP": "Somos",
     "breadcrumbCurrent": "Quiénes somos",
-    "empresaTitulo": "JASFLY Servicios Aéreos",
+    "empresaTitulo": "Tecnología, experiencia y precisión al servicio del relevamiento aéreo",
     "empresaIntro": "Una empresa especializada en operaciones con helicópteros con una amplia trayectoria a nivel nacional.",
     "flotaTitulo": "Flota de helicópteros",
     "flotaParrafo": "Nuestra flota de helicópteros de última generación y la tecnología más avanzada nos permiten ofrecer soluciones a medida para cada uno de nuestros clientes.",
@@ -169,6 +169,9 @@
     "paginaTituloH2": "Estamos en",
     "paginaTituloP": "Contacto",
     "breadcrumbCurrent": "Contacto",
+    "TituloOperaciones" : "Base de Operaciones",
+    "webTitulo" : "Sitio Web",
+    "TituloLocal" : "Centro de Procesamiento",
     "direccionTitulo": "Dirección",
     "verMapa": "Ver en Google Maps",
     "whatsappTitulo": "Whatsapp",

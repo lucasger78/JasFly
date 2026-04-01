@@ -2,7 +2,7 @@
   "nav": {
     "inicio": "Home",
     "nosotros": "About Us",
-    "queHacemos": "What We Do",
+    "queHacemos": "Services",
     "proyectos": "Projects",
     "contacto": "Contact",
     "faqs": "FAQs"
@@ -36,7 +36,7 @@
     "paginaTituloH2": "Who",
     "paginaTituloP": "We Are",
     "breadcrumbCurrent": "Who We Are",
-    "empresaTitulo": "JASFLY Aerial Services",
+    "empresaTitulo": "Technology, experience, and precision at the service of aerial surveying",
     "empresaIntro": "A company specialized in helicopter operations with an extensive national track record.",
     "flotaTitulo": "Helicopter fleet",
     "flotaParrafo": "Our state-of-the-art helicopter fleet and the most advanced technology allow us to offer tailored solutions for each of our clients.",
@@ -169,6 +169,9 @@
     "paginaTituloH2": "Get in",
     "paginaTituloP": "Touch",
     "breadcrumbCurrent": "Contact",
+    "TituloOperaciones" : "Operations Base",
+    "webTitulo" : "Website",
+    "TituloLocal" : "Processing Center",
     "direccionTitulo": "Address",
     "verMapa": "View on Google Maps",
     "whatsappTitulo": "Whatsapp",
