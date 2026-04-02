@@ -357,8 +357,8 @@ li {
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
   .logo-image {
-    width: 180px;
-    height: 200px !important;
+    width: 150px;
+    height: auto !important;
     max-height: 36px;
     margin-right: 8px;
     /* border: #d6d6d6 1px solid; */
@@ -1974,6 +1974,11 @@ section,
   font-weight: 500;
 }
 
+.team .team-member span.d-inline-span {
+  display: inline;
+  padding-bottom: 0;
+}
+
 .team .team-member span::after {
   content: "";
   position: absolute;
@@ -1983,6 +1988,10 @@ section,
   background: color-mix(in srgb, var(--default-color), transparent 85%);
   bottom: 0;
   left: 0;
+}
+
+.team .team-member span.d-inline-span::after {
+  display: none;
 }
 
 @media (max-width: 468px) {
@@ -3890,14 +3899,7 @@ section,
   transition: filter 0.3s ease;
 }
 
-/* .flags-ar:hover,
-.flags-br:hover,
-.flags-gb:hover,
-.flags-ar.hovered,
-.flags-br.hovered,
-.flags-gb.hovered {
- filter: grayscale(0%);   
-} */
+
 
 /* Solo usamos esta para la activa */
 .flags_items.active img {
@@ -4009,28 +4011,4 @@ p {
 
 .section-title {
   margin-bottom: -70px !important;
-}
-
-
-
-/* Contact section - alineación izquierda */
-/* Contact section */
-#contact .info-item {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-#contact .info-item p {
-  margin-bottom: 0 !important;
-}
-.contact-img-wrapper {
-  width: 100%;
-  margin: 0 !important;
-}
-
-.contact-img {
-  width: 100% !important;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
 }
