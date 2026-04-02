@@ -1,37 +1,95 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const flagsElement    = document.getElementById("flags");
-  const textsToChange   = document.querySelectorAll("[data-section]");
-  let   currentLanguage = localStorage.getItem("selectedLanguage") || "es";
 
-  // Esta función ahora es la única que decide el estado "real" de las banderas
-  const updateFlagsVisualState = () => {
+// const flagsElement = document.getElementById("flags");
+// const textsToChange = document.querySelectorAll("[data-section]");
+
+// const changeLanguage = async (language) => {
+//   const requestJson = await fetch(`js/${language}.json`);
+//   const texts = await requestJson.json();
+
+//   for (const textToChange of textsToChange) {
+//     const section = textToChange.dataset.section;
+//     const value = textToChange.dataset.value;
+//     textToChange.innerHTML = texts[section][value];
+//   }
+
+//   // Almacena el idioma seleccionado en el almacenamiento local del navegador
+//   localStorage.setItem("selectedLanguage", language);
+// };
+
+// const loadLanguage = () => {
+//   // Obtiene el idioma seleccionado almacenado en el almacenamiento local del navegador
+//   const selectedLanguage = localStorage.getItem("selectedLanguage");
+
+//   if (selectedLanguage) {
+//     changeLanguage(selectedLanguage);
+//   } else {
+//     // Establece un idioma predeterminado si no se ha seleccionado ninguno
+//     changeLanguage("default");
+//   }
+// };
+
+// flagsElement.addEventListener("click", (e) => {
+//   changeLanguage(e.target.parentElement.dataset.language);
+// });
+
+// // Carga el idioma al cargar la página
+// loadLanguage();
+
+// // const loadLanguage = async () => {
+// //   // Verificar si el idioma seleccionado ya está almacenado en el almacenamiento local del navegador
+// //   const selectedLanguage = localStorage.getItem("selectedLanguage");
+
+// //   if (selectedLanguage) {
+// //     changeLanguage(selectedLanguage);
+// //   } else {
+// //     // Cargar el archivo "es.json" y almacenar su contenido en el almacenamiento local
+// //     const response = await fetch("es.json");
+// //     const languageData = await response.json();
+// //     localStorage.setItem("selectedLanguage", JSON.stringify(languageData));
+// //     changeLanguage(languageData);
+// //   }
+// // };
+
+// // flagsElement.addEventListener("click", (e) => {
+// //   changeLanguage(e.target.parentElement.dataset.language);
+// // });
+
+// // // Cargar el idioma al cargar la página
+// // loadLanguage();
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const flagsElement = document.getElementById("flags");
+  const textsToChange = document.querySelectorAll("[data-section]");
+  let currentLanguage = localStorage.getItem("selectedLanguage") || "es";
+
+  const setActiveFlag = (language) => {
     document.querySelectorAll(".flags_items").forEach((flag) => {
       const img = flag.querySelector("img");
-      const isActive = flag.dataset.language === currentLanguage;
-      img.style.filter = isActive ? "grayscale(0%)" : "grayscale(100%)";
+      img.style.filter = flag.dataset.language === language
+        ? "grayscale(0%)"
+        : "grayscale(100%)";
     });
   };
 
-  const changeLanguage = async (language, force = false) => {
-    if (language === currentLanguage && !force) return; // evitar recarga innecesaria
-
+  const changeLanguage = async (language) => {
     currentLanguage = language;
     localStorage.setItem("selectedLanguage", language);
+    setActiveFlag(language);
 
     const requestJson = await fetch(`js/${language}.json`);
     const texts = await requestJson.json();
 
     for (const textToChange of textsToChange) {
       const section = textToChange.dataset.section;
-      const value   = textToChange.dataset.value;
+      const value = textToChange.dataset.value;
       textToChange.innerHTML = texts[section][value];
     }
-
-    // Actualizamos TODAS las banderas al estado final
-    updateFlagsVisualState();
   };
 
-  // Hover: mostramos color siempre (independientemente del estado)
   document.querySelectorAll(".flags_items").forEach((flag) => {
     const img = flag.querySelector("img");
 
@@ -40,27 +98,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     flag.addEventListener("mouseleave", () => {
-      // Al salir → volvemos al estado "real" (activo o gris)
-      const isActive = flag.dataset.language === currentLanguage;
-      img.style.filter = isActive ? "grayscale(0%)" : "grayscale(100%)";
+      if (flag.dataset.language !== currentLanguage) {
+        img.style.filter = "grayscale(100%)";
+      }
     });
   });
 
-  // Click en cualquier parte del contenedor → delegación
   flagsElement.addEventListener("click", (e) => {
     const flagItem = e.target.closest(".flags_items");
-    if (flagItem) {
-      changeLanguage(flagItem.dataset.language);
-    }
+    if (flagItem) changeLanguage(flagItem.dataset.language);
   });
 
-  // Estado  inicial
-  updateFlagsVisualState();         // ← importante: usamos la función dedicada
-  
-  // Si el idioma es distinto al que viene por defecto en el HTML (es), forzamos la carga
-  if (currentLanguage !== "es") {
-    changeLanguage(currentLanguage, true);
-  }
+  changeLanguage(currentLanguage);
+
 });
-
-
