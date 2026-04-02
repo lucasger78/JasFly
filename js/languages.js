@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  const changeLanguage = async (language) => {
-    if (language === currentLanguage) return; // evitar recarga innecesaria
+  const changeLanguage = async (language, force = false) => {
+    if (language === currentLanguage && !force) return; // evitar recarga innecesaria
 
     currentLanguage = language;
     localStorage.setItem("selectedLanguage", language);
@@ -56,7 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Estado  inicial
   updateFlagsVisualState();         // ← importante: usamos la función dedicada
-  changeLanguage(currentLanguage);  // ← carga textos (puedes mantenerlo o quitarlo si ya cargas es.json por defecto)
+  
+  // Si el idioma es distinto al que viene por defecto en el HTML (es), forzamos la carga
+  if (currentLanguage !== "es") {
+    changeLanguage(currentLanguage, true);
+  }
 });
 
 
